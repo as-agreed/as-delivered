@@ -1,10 +1,16 @@
 # Replay the ten MAST runs
 
-The bench that read these runs, run again on the reads it stored: no model is called. The sequence below fetches the ten public rows, rebuilds each run's links, puts back every text this folder cuts, and runs the bench (`../bin/bench.py`, whose only change is the text of two table headers) on the `as-agreed` package installed from PyPI, each model prompt answered with the read stored for it. It prints tier 1's verdicts on the reads, other than PRESERVED, run by run, and checks that the replay gives what this folder holds. Python 3.9 or later, `curl`, and a network for two things only: one GET per row to the dataset server (a neutral User-Agent, nothing sent but the URL) and `pip install` from PyPI.
+A result you can rerun is worth more than our word.
+
+This page reruns the bench that read these runs. It uses the reads the bench stored, so no model is called. The commands fetch the ten public rows and rebuild the links of each run. They put back every text this folder cuts. Then they run the bench, `../bin/bench.py`, on the `as-agreed` package from PyPI. The bench has one change: the text of two table headers. Each model prompt is answered with the read stored for it.
+
+Run by run, the replay prints tier 1's verdicts on the reads, other than PRESERVED. Then it checks that it gives what this folder holds.
+
+You need Python 3.9 or later and `curl`. The network is used for two things only. The first is one GET per row to the dataset server. It has a neutral User-Agent and sends nothing but the URL. The second is `pip install` from PyPI.
 
 ## Run it
 
-Paste into a terminal at the root of this repository (the folder that holds `LICENSE` and `replay/`). Set `PY` to the Python you want to test.
+Open a terminal at the root of this repository, the folder that holds `LICENSE` and `replay/`. Set `PY` to the Python you want to test, and paste:
 
 ```bash
 PY=python3
@@ -16,39 +22,39 @@ venv/bin/python -I -B bin/cut_replay.py restore $R/replay/mast-ten runs full
 venv/bin/python -I -B bin/replay.py $R/replay/mast-ten runs full out
 ```
 
-- Done when the last line reads `replay: bench exit 0; every check passed` (about two minutes).
-- Then open `$W/out/cards/<run>.html`: the same cards as each `card.html` here, with the quotes in place. `$W/out/maps/<run>.svg` is each `flow.svg`.
-- Stop if a line says `DIFFERS`: the dataset server serves another trajectory for that row (the rows API takes no revision), and its texts cannot be put back.
+- Done when the last line reads `replay: bench exit 0; every check passed`. It takes about two minutes.
+- Then open `$W/out/cards/<run>.html`. These are the cards of each `card.html` here, with the quotes in place. `$W/out/maps/<run>.svg` is each `flow.svg`.
+- Stop if a line says `DIFFERS`. The dataset server then serves another trajectory for that row, and its texts cannot be put back. The rows API takes no revision.
 
 ## What each line does
 
-1. A new virtual environment with `as-agreed` 0.0.1 from PyPI, the version this folder was replayed on, and no other package. A later version may class a read differently.
-2. The bench's files and the collection's `build/` go into the temporary folder, where `convert_mast.py` looks for the extractor (`../public-readings/mast/build/extract.py`) and `cut_replay.py` for `cut.py`.
-3. `convert_mast.py` fetches the ten rows (`curl -q -f`, one GET each), prints whether each trajectory's sha256 is the one in `../../ATTRIBUTION.md`, and rebuilds each run's `links.jsonl` with `build/extract.py`.
-4. `cut_replay.py restore` puts back every cut text from the rebuilt links and the scrubbed trajectory, checks each text and each whole file against its sha256 in `cuts.jsonl`, and checks that the rebuilt `links.jsonl` cuts to the public one byte for byte. One line per run.
-5. `replay.py` runs the bench as chunk 1, its first batch of runs (2026-11-05), ran it (`--mode exchange --drafter-version v1 --reader-version v2 --second-reader --second-rule d44`, each record reused as drafted). Reader 1 answers from `reads.jsonl`, matched by run, link and fields; reader 2 from `second-reads.jsonl`, matched by run and the sha256 of the prompt. The bench's clock reads the stored reads' date, so its rows carry the day the reads were made. Per run it prints tier 1's verdicts other than PRESERVED, the run's result after the hand check (`hand-check.md`), and four checks:
-   - `verdict lines as the stored ledger's`: every line of the report `as_agreed.report.build` makes from the new ledger is the line it makes from this folder's `ledger.jsonl`, byte for byte (a ledger's run id and times differ from run to run, its lines do not);
-   - `reads as stored`: the `reads.jsonl` and `second-reads.jsonl` the bench writes are the stored ones, byte for byte;
-   - `map as flow.svg`: `as_agreed.report.redraw(ledger, svg)` draws `flow.svg`, byte for byte: the shareable map, counts and step names, no value (the cards carry the values and the quotes);
-   - `card as card.html`: the run's cards, drawn by `cards.py` from the bench's rows and cut by this folder's own cuts, are `card.html`, byte for byte.
+1. A new virtual environment, with `as-agreed` 0.0.1 from PyPI and no other package. That is the version this folder was replayed on. A later version may class a read differently.
+2. The bench's files and the collection's `build/` go into the temporary folder. There `convert_mast.py` finds the extractor (`../public-readings/mast/build/extract.py`), and `cut_replay.py` finds `cut.py`.
+3. `convert_mast.py` fetches the ten rows (`curl -q -f`, one GET each). It prints whether each trajectory's sha256 is the one in `../../ATTRIBUTION.md`. Then it rebuilds the `links.jsonl` of each run with `build/extract.py`.
+4. `cut_replay.py restore` puts back every cut text, from the rebuilt links and the scrubbed trajectory. It checks each text and each whole file against its sha256 in `cuts.jsonl`. It also checks that the rebuilt `links.jsonl` cuts to the public one, byte for byte. It prints one line per run.
+5. `replay.py` runs the bench the way chunk 1 ran it. Chunk 1 was the first batch of runs, on 2026-11-05. Its flags: `--mode exchange --drafter-version v1 --reader-version v2 --second-reader --second-rule d44`. Each record is reused as drafted. Reader 1 answers from `reads.jsonl`, matched by run, link and fields. Reader 2 answers from `second-reads.jsonl`, matched by run and the sha256 of the prompt. The bench's clock reads the date of the stored reads. So its rows carry the day the reads were made. For each run, it prints tier 1's verdicts other than PRESERVED. Then the run's result after the hand check (`hand-check.md`), and four checks:
+   - `verdict lines as the stored ledger's`: `as_agreed.report.build` makes a report from the new ledger. Each of its lines is the line it makes from this folder's `ledger.jsonl`, byte for byte. A ledger's run id and times differ from run to run. Its lines do not.
+   - `reads as stored`: the `reads.jsonl` and `second-reads.jsonl` that the bench writes are the stored ones, byte for byte.
+   - `map as flow.svg`: `as_agreed.report.redraw(ledger, svg)` draws `flow.svg`, byte for byte. That is the map you can share: counts and step names, no value. The cards carry the values and the quotes.
+   - `card as card.html`: `cards.py` draws the cards of the run from the bench's rows, and this folder's own cuts cut them. The result is `card.html`, byte for byte.
 
 ## The files in `../bin/`
 
 | file | sha256 | what it is |
 |---|---|---|
-| `bench.py` | `784653cce5a6a8efdc07f45a8b53e738f5efa0507b9a4328aa61c81a4ac6da6a` | the trace bench, copied from the study on 2026-11-07 with one change: in two table-header strings a person's name reads "the project" (the study's file: `7b1b0e968e890c67b0a704c5766b0aee70735bc7c7660459a91b00dc39259642`); the replay never writes those headers into what it checks |
-| `models.py` | `77c3cbc1b42677938045fef0e636b2c55fd8a5b0611d08c03cf34ef05d7afd65` | its model callers (imported by `bench.py`); the replay replaces the caller, not the file |
-| `prompts.py` | `f4c56e9a67a6cfd1366d1bf452a3601da4f43ee274f340822faaf87ce6ff2caf` | its prompts and the reader's checks (imported by `bench.py`) |
+| `bench.py` | `784653cce5a6a8efdc07f45a8b53e738f5efa0507b9a4328aa61c81a4ac6da6a` | the trace bench, copied from the study on 2026-11-07. One change: in two table-header strings, a person's name now reads "the project". The study's file is `7b1b0e968e890c67b0a704c5766b0aee70735bc7c7660459a91b00dc39259642`. The replay does not write those headers into what it checks. |
+| `models.py` | `77c3cbc1b42677938045fef0e636b2c55fd8a5b0611d08c03cf34ef05d7afd65` | its model callers, imported by `bench.py`. The replay replaces the caller, not the file. |
+| `prompts.py` | `f4c56e9a67a6cfd1366d1bf452a3601da4f43ee274f340822faaf87ce6ff2caf` | its prompts and the reader's checks, imported by `bench.py` |
 | `cards.py` | `de8a0ad9b8c00067b99cd7299c7f7b2d6c8723173855945c3aef3442e65c2ee8` | the card renderer, unchanged |
 | `convert_mast.py` | `35096c8a3caeafdbba1582c6ba1ef4651d6bbe0692faa50251a9aff682c77571` | the fetch and split of the MAST rows, unchanged |
-| `replay.py` | `278f0becc5f04cfcb32e5b80cd94bae1c1dcea963204d83f8561b3fbee103b21` | new: the stored-read caller, the checks, the card page (one run, no tally) |
+| `replay.py` | `278f0becc5f04cfcb32e5b80cd94bae1c1dcea963204d83f8561b3fbee103b21` | new: the stored-read caller, the checks, and the card page (one run, no tally) |
 | `cut_replay.py` | `f2b1c66ea437b7693fa641d9e45c982201e53bf87545ee38353c81e6ed4421d3` | new: cut and restore for the JSON files and the hand check, on top of `build/cut.py` |
 
-The library (`as_agreed`) is the PyPI package, unchanged; `models.py`, `prompts.py`, `cards.py` and `convert_mast.py` are the study's files, unchanged. Nothing in `../bin/` imports anything outside the Python standard library and `as_agreed`.
+The library, `as_agreed`, is the PyPI package, unchanged. `models.py`, `prompts.py`, `cards.py` and `convert_mast.py` are the study's files, unchanged. Nothing in `../bin/` imports anything outside the Python standard library and `as_agreed`.
 
 ## Proof, 2026-11-07
 
-The sequence above, taken from this file as it stands and run twice, each time from a fresh copy of this tree in a new temporary folder with its own virtual environment and `as-agreed` 0.0.1 from PyPI: once with `PY=python3` (Python 3.14.6) and once with `PY=/usr/bin/python3` (Python 3.9.6), on macOS. Both exit 0 and end `replay: bench exit 0; every check passed`; every run passes all four checks on both. `diff` of the two outputs:
+We ran the sequence above twice, copied from this file as it stands. Each time, we started from a fresh copy of this tree in a new temporary folder. Each time it had its own virtual environment and `as-agreed` 0.0.1 from PyPI. The first run used `PY=python3` (Python 3.14.6), the second `PY=/usr/bin/python3` (Python 3.9.6), on macOS. Both exit 0 and end `replay: bench exit 0; every check passed`. Every run passes all four checks on both. Here is the `diff` of the two outputs:
 
 ```text
 23c23
@@ -57,7 +63,7 @@ The sequence above, taken from this file as it stands and run twice, each time f
 > Python 3.9.6; as_agreed 0.0.1
 ```
 
-The output on Python 3.14.6, whole (the 3.9.6 output is the same but for that line):
+The whole output on Python 3.14.6. The 3.9.6 output is the same except for that line:
 
 ```text
 0	t01-chatdev-checkers	hash matches the readings
@@ -215,7 +221,7 @@ replay: bench exit 0; every check passed
 
 ## How this folder was made
 
-The authors' step, on the stored results of chunk 1: the ten MAST run folders (`commitments.json`, `reads.jsonl`, `second-reads.jsonl`) and the rows of the ten runs in the chunk's hand check. From the same temporary layout as above, with `<stored>` that folder:
+This is the authors' step, on the stored results of chunk 1. Its input is the ten MAST run folders (`commitments.json`, `reads.jsonl`, `second-reads.jsonl`). It also takes the rows of the ten runs in the chunk's hand check. It ran from the same temporary layout as above, with `<stored>` as that folder:
 
 ```bash
 venv/bin/python -I -B bin/replay.py $R/replay/mast-ten runs <stored> pass1 --write      # the ledgers
@@ -223,8 +229,8 @@ venv/bin/python -I -B bin/cut_replay.py make <stored> pass1/chunk-1 runs $R/repl
 venv/bin/python -I -B bin/replay.py $R/replay/mast-ten runs <stored> pass2 --write      # flow.svg and card.html
 ```
 
-Chunk 1 feeds this folder, not the regression of 2026-11-06 (reader-v4, spec draft 9): the regression kept rows and tables only, no per-run reads, so it cannot be replayed. Under chunk 1's rules the replay gives the same units and classes as chunk 1's own rows for all ten runs (checked on 2026-11-07 against the study's `rows.json`, which is not in this folder).
+Chunk 1 feeds this folder, not the regression of 2026-11-06 (reader-v4, spec draft 9). That regression kept rows and tables only, with no reads for each run, so it cannot be replayed. Under chunk 1's rules, the replay gives the units and classes of chunk 1's own rows, for all ten runs. We checked this on 2026-11-07 against the study's `rows.json`, which is not in this folder.
 
 ## What a replay cannot give
 
-It replays the stored reads; it does not read again. Every record of what was agreed is a model's proxy, drafted from the task statement alone, and every read is one model's read of one link [C]; the class is tier 1's, deterministic given those reads [D]. Two readers agreeing is not truth, and neither is the hand check. To test the reads, give a model or a person each link and the reader prompt of `prompts.py` (reader-v2), and compare with `reads.jsonl`.
+A replay plays back the stored reads. It does not read again. Every record of what was agreed is a model's proxy, drafted from the task statement alone. Every read is one model's read of one link [C]. The class is tier 1's, deterministic given those reads [D]. Two readers that agree are not the truth, and neither is the hand check. To test the reads, give a model or a person each link and the reader prompt of `prompts.py` (reader-v2). Then compare with `reads.jsonl`.

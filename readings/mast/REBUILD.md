@@ -1,18 +1,20 @@
 # Rebuild the ten MAST runs
 
-These folders hold no third-party text. Each cut text is kept as its sha256 and its length, in the file and in the folder's `cuts.jsonl`. This page gives the commands that fetch the public rows, rebuild the full `links.jsonl`, and put every cut text back, checking each sha256. Python 3.9 or later, standard library only; no model, no account.
+No third-party text lives here. You can still read it all.
+
+Each cut text is kept as its sha256 and its length. Both sit in the file and in the folder's `cuts.jsonl`. This page gives the commands that fetch the public rows and rebuild the full `links.jsonl`. They put every cut text back and check each sha256. You need Python 3.9 or later, with the standard library only. No model, no account.
 
 ## What is cut, and what stays
 
-- `links.jsonl`: each link's `text` (130 links). The record keeps `chars` and gains `text_sha256`; the first line, the run's metadata, gains a `cut` note.
-- `as-stated.md`: the task statement under "Task statement (verbatim)" (10), which is the text of link L00.
-- `as-stated.md`, `reading.md`: each quote of 4 or more words, in double quotes or in code font, found in the run's links, its scrubbed trajectory or its reference block (218), printed as `[cut <chars> chars, sha256 <first 12>]`. Shorter quotes stay, as do the names of MAST's failure modes and quotes of the proxy itself.
-- In every file, the word "meaning" of 2026-10-31 is printed "term" (689 places, none inside a quote).
-- `fates.csv`, `flow.svg`, `counts.md`, `counts.csv` hold no third-party text.
+- `links.jsonl`: the `text` of each link (130 links). The record keeps `chars` and gains `text_sha256`. The first line, the metadata of the run, gains a `cut` note.
+- `as-stated.md`: the task statement under "Task statement (verbatim)" (10). It is the text of link L00.
+- `as-stated.md`, `reading.md`: each quote of 4 or more words, in double quotes or in code font (218). These are quotes found in the links of the run, its scrubbed trajectory or its reference block. Each prints as `[cut <chars> chars, sha256 <first 12>]`. Shorter quotes stay. So do the names of MAST's failure modes, and quotes of the proxy itself.
+- In every file, one word of the 2026-10-31 vocabulary now prints as "term" (689 places, none inside a quote). Each `cuts.jsonl` records the old word at each place.
+- `fates.csv`, `flow.svg`, `counts.md`, `counts.csv` carry no third-party text.
 
 ## Rebuild one run, then all ten
 
-From the root of this repository. The fetch is one GET per row; the row and everything rebuilt from it stay in a temporary folder.
+Work from the root of this repository. The fetch is one GET per row. The row, and all that is rebuilt from it, stay in a temporary folder.
 
 ```bash
 W=$(mktemp -d)
@@ -45,17 +47,28 @@ done
 python3 -I -B build/cut.py restore readings/mast "$W" "$W" "$W/full"   # counts.md, counts.csv
 ```
 
-`$W/full/<folder>/` then holds the files of 2026-10-31, and `$W/rebuilt/<folder>/links.jsonl` the full links. The sha256 of `as-stated.md` restored is the one fixed before any run was read (t01 and t02 `7591efeb…`, t03 and t04 `7e051cb5…`, t05 `9ba1cc38…`, t06 `f9a24a85…`, t07 `655c2cf7…`, t08 `3e49137a…`, t09 `d9f02531…`, t10 `91ce3ae6…`; full values in each `cuts.jsonl`). `$W/scratch/<folder>/` holds the scrubbed trajectory, `trace-scrubbed.txt`, which some readings cite by line ("log line N").
+`$W/full/<folder>/` then holds the files of 2026-10-31, and `$W/rebuilt/<folder>/links.jsonl` the full links. `$W/scratch/<folder>/` holds the scrubbed trajectory, `trace-scrubbed.txt`. Some readings cite it by line ("log line N").
+
+Each restored `as-stated.md` has the sha256 fixed before any run was read. The full values are in each `cuts.jsonl`:
+
+- t01 and t02: `7591efeb…`
+- t03 and t04: `7e051cb5…`
+- t05: `9ba1cc38…`
+- t06: `f9a24a85…`
+- t07: `655c2cf7…`
+- t08: `3e49137a…`
+- t09: `d9f02531…`
+- t10: `91ce3ae6…`
 
 ## The pinned parts
 
 | part | pin |
 |---|---|
-| the source | `mcemri/MAST-Data`, revision `95118ac951421753cf1deb87ddea3b01e693c41b`; the rows API takes no revision, so each run is pinned by the sha256 of its trajectory (`../../ATTRIBUTION.md`) |
-| the extractor | `build/extract.py`: splits a row into links, scrubs it, counts status markers per link [D] |
-| the lexicon | `build/lexicon.py`, the claim-ledger lexicon frozen on 2026-10-31, sha256 `cd8d753835d9ac1c44f41371b9c51a1008c1ec90c1b92ed9c89332314c767eb7` (also in each `links.jsonl` header) |
-| the cut | `build/cut.py`: `links` cuts a full `links.jsonl`; `restore` puts every text back; `make` is the authors' step and shows the rule |
-| the maps | `build/maps.py <mast-folder> <scratch> <draw_flow.py>` with the renderer `draw_flow.py` of https://github.com/as-agreed/as-agreed (Apache-2.0), sha256 `c7b12133f15c222056ae90a05047f37f9850a9a687833e766d04380f8b3083f8`, redraws all ten `flow.svg` byte for byte from these `fates.csv` (checked 2026-11-06). It writes into the folder it is given: run it on a copy |
+| the source | `mcemri/MAST-Data`, revision `95118ac951421753cf1deb87ddea3b01e693c41b`. The rows API takes no revision. So each run is pinned by the sha256 of its trajectory (`../../ATTRIBUTION.md`). |
+| the extractor | `build/extract.py`: it splits a row into links, scrubs it, and counts status markers per link [D] |
+| the lexicon | `build/lexicon.py`, the claim-ledger lexicon frozen on 2026-10-31. Its sha256 is `cd8d753835d9ac1c44f41371b9c51a1008c1ec90c1b92ed9c89332314c767eb7`, also in each `links.jsonl` header. |
+| the cut | `build/cut.py`: `links` cuts a full `links.jsonl`, and `restore` puts every text back. `make` is the authors' step and shows the rule. |
+| the maps | `build/maps.py <mast-folder> <scratch> <draw_flow.py>` redraws all ten `flow.svg` from these `fates.csv`, byte for byte (checked 2026-11-06). It uses the renderer `draw_flow.py` of https://github.com/as-agreed/as-agreed (Apache-2.0), sha256 `c7b12133f15c222056ae90a05047f37f9850a9a687833e766d04380f8b3083f8`. It writes into the folder it is given, so run it on a copy. |
 
 ## Full links.jsonl, by sha256
 
@@ -74,15 +87,15 @@ python3 -I -B build/cut.py restore readings/mast "$W" "$W" "$W/full"   # counts.
 
 ## What a rebuild cannot give
 
-It gives back the links and the [D] counts exactly, and the files as they were written. It does not redo the [C] tier: every fate, site and map is one run, read by a model (Opus 5.5, the night of 2026-10-30 to 31), no second rater. To test that tier, give any model or person `as-stated.md`, the links and the protocol in each `reading.md`, and compare the `fates.csv` it writes with these. `counts.md` and `counts.csv` were made from the ten `fates.csv` and the `links.jsonl` headers by a table script that is not in this set.
+A rebuild gives back the links and the [D] counts exactly, and the files as they were written. It does not redo the [C] tier. Every fate, site and map is one run, read by one model, with no second rater. The model was Opus 5.5, on the night of 2026-10-30 to 31. To test that tier, give any model or person `as-stated.md`, the links and the protocol in each `reading.md`. Then compare the `fates.csv` it writes with these. `counts.md` and `counts.csv` were made from the ten `fates.csv` and the `links.jsonl` headers. The table script that made them is not in this set.
 
 ## What each run folder holds
 
 | file | what it holds | tier |
 |---|---|---|
-| `as-stated.md` | the task-as-stated proxy, written from the task statement alone before the run was read: its terms, typed (question, object, criterion, premise, frame), and what the statement leaves open | [C], written blind |
-| `links.jsonl` | line 1: the row's metadata, MAST's annotation, hashes, scrub counts; then one line per link: from, to, kind, phase, `chars`, `text_sha256`, marker counts | [D] |
+| `as-stated.md` | the task-as-stated proxy, written from the task statement alone, before the run was read. It gives its terms, typed (question, object, criterion, premise, frame), and what the statement leaves open. | [C], written blind |
+| `links.jsonl` | line 1: the row's metadata, MAST's annotation, hashes, scrub counts. Then one line per link: from, to, kind, phase, `chars`, `text_sha256`, marker counts. | [D] |
 | `reading.md` | the reading: terms and claims link by link, losses and their sites, MAST's label against this reading, limits | [C] |
-| `fates.csv` | one row per term and per claim, one column per link, then the state at the commit, the first loss and its site; last row the comparison with MAST | [C] |
+| `fates.csv` | one row per term and per claim, one column per link. Then the state at the commit, the first loss and its site. The last row is the comparison with MAST. | [C] |
 | `flow.svg` | the map, drawn from `fates.csv` | [C] |
-| `cuts.jsonl` | for each file: its sha256 of 2026-10-31, and each cut with its place, its sha256, its length and where its text sits in the rebuilt sources | [D] |
+| `cuts.jsonl` | for each file, its sha256 of 2026-10-31. For each cut: its place, its sha256, its length, and where its text sits in the rebuilt sources. | [D] |
