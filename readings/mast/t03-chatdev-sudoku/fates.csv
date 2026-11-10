@@ -1,0 +1,15 @@
+unit,kind,type,L00,L01,L02,L03,L04,L05,L06,L07,L08,L09,L10,L11,L12,L13,L14,L15,L16,L17,L18,L19,L20,L21,L22,L23,L24,L25,final,first_lost,site,correct,commit
+M1,term,question,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,,,,L19
+M2,term,object,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,,,,L19
+M3,term,criterion,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,,,,L19
+M4,term,criterion,intact,intact,intact,intact,intact,intact,intact,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,L07,source,,L19
+M5,term,criterion,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,,,,L19
+M6,term,criterion,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,,,,L19
+M7,term,criterion,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,,,,L19
+C1,claim,hedged,·,·,made,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,hardened,L03,design,unknown,L19
+C2,claim,flat,·,·,·,·,·,·,·,·,·,made,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,,,yes,L19
+C3,claim,flat,·,·,·,·,·,·,·,·,·,·,·,·,·,made,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,,,no,L19
+C4,claim,strengthened,·,·,·,·,·,·,·,·,·,·,·,·,·,made,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,,,no,L19
+C5,claim,flat,·,·,·,·,·,·,·,·,·,·,·,·,·,·,·,·,·,made,kept,kept,kept,kept,kept,kept,kept,kept,kept,,,yes,L19
+C6,claim,strengthened,·,·,·,·,·,·,·,·,·,·,·,·,·,·,·,·,·,made,kept,kept,kept,kept,kept,kept,kept,kept,kept,,,no,L19
+MAST,mast,disagree,,,,,,,,,,,,,,,,,,,,,,,,,,,0/0/2,,,,L19

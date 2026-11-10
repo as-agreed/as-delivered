@@ -1,0 +1,15 @@
+unit,kind,type,L00,L01,L02,L03,L04,L05,L06,L07,L08,L09,L10,L11,L12,L13,L14,L15,L16,L17,L18,L19,final,first_lost,site,correct,commit
+M1,term,question,intact,intact,intact,intact,intact,intact,intact,intact,intact,substituted,substituted,substituted,substituted,restored,restored,restored,restored,substituted,restored,restored,restored,L09,source,,L18
+M2,term,object,intact,intact,intact,intact,intact,intact,intact,intact,intact,substituted,substituted,substituted,substituted,restored,restored,restored,restored,substituted,restored,restored,restored,L09,source,,L18
+M3,term,premise,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,,,,L18
+M4,term,premise,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,,,,L18
+M5,term,criterion,intact,intact,intact,intact,intact,intact,intact,intact,intact,substituted,substituted,substituted,substituted,restored,restored,restored,restored,substituted,restored,restored,restored,L09,source,,L18
+M6,term,criterion,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,,,,L18
+C1,claim,flat,·,·,made,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,,,yes,L18
+C2,claim,flat,·,·,·,·,·,·,made,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,,,no,L18
+C3,claim,flat,·,·,·,·,·,·,·,·,made,softened,softened,softened,softened,softened,softened,softened,softened,softened,softened,softened,softened,L09,seam,no,L18
+C4,claim,flat,·,·,·,·,·,·,·,·,·,·,·,·,·,made,hardened,hardened,hardened,dropped,hardened,hardened,hardened,L14,source,no,L18
+C5,claim,strengthened,·,·,·,·,·,·,·,·,·,·,·,·,·,·,made,kept,kept,kept,kept,kept,kept,,,no,L18
+C6,claim,flat,·,·,·,·,·,·,·,·,·,·,·,·,·,·,·,·,made,kept,dropped,dropped,dropped,L18,sink,yes,L18
+C7,claim,flat,·,·,·,·,·,·,·,·,·,·,·,·,·,·,·,·,·,·,made,softened,made,L19,sink,no,L18
+MAST,mast,partly,,,,,,,,,,,,,,,,,,,,,12/10/0,,,,L18

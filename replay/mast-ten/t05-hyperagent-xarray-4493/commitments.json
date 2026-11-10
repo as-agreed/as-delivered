@@ -1,0 +1,62 @@
+{
+ "kind": "as_agreed_proxy",
+ "proxy": true,
+ "tag": "[C]",
+ "drafted_by": {
+  "mode": "exchange",
+  "model": "claude-opus-5-5",
+  "version": "claude-opus-5-5",
+  "date": "2026-11-04T15:09:53Z",
+  "prompt": "drafter-v1 (2026-11-04)"
+ },
+ "task_statement_sha256": "9f18299894b39d8d0e920995cd056c024cfb8bee7f5fa92da7cd3e329b98cff2",
+ "obligor_obligee": "set by the harness, not drafted",
+ "commitments": [
+  {
+   "commitment_id": "task",
+   "act": "keep the chunked DataArray [cut 24 chars, sha256 c6050c0b3b92]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST"
+  },
+  {
+   "commitment_id": "stays_chunked",
+   "act": "keep the chunked DataArray [cut 24 chars, sha256 c6050c0b3b92]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "SHOULD",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "chunked_after_update",
+     "text": "After Dataset.update with [cut 25 chars, sha256 367a3507feb1] the variable in the Dataset is still a chunked dask array.",
+     "verification": "machine_checkable",
+     "field": "chunked_after_update"
+    }
+   ]
+  }
+ ],
+ "quotes": {
+  "task": "[cut 62 chars, sha256 531dd915fde3]",
+  "stays_chunked": "[cut 62 chars, sha256 531dd915fde3]"
+ },
+ "untyped": [
+  {
+   "quote": "[cut 74 chars, sha256 85b595bf58e2]",
+   "why": "issue title describing the defect, not phrased as a requirement"
+  },
+  {
+   "quote": "[cut 137 chars, sha256 73a2df108268]",
+   "why": "second report phrased as a question; no expected behaviour is stated"
+  },
+  {
+   "quote": "[cut 14 chars, sha256 9ff7ebefdf62]",
+   "why": "environment of the report, not a commitment"
+  },
+  {
+   "quote": "[cut 12 chars, sha256 b3817703b9ed]",
+   "why": "environment of the report, not a commitment"
+  }
+ ],
+ "dropped_by_check": [],
+ "reused_from": "results/2026-11-04-mast-ten-v2/t05-hyperagent-xarray-4493/commitments.json"
+}

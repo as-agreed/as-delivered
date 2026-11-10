@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "To refer to this set, cite it as below. Credit the source data, MAST-Data, as ATTRIBUTION.md gives it."
+type: dataset
+title: "as-delivered: results on public traces of multi-agent runs"
+version: "0.1"
+date-released: "2026-11-06"
+authors:
+  - name: "as-agreed"
+    website: "https://github.com/as-agreed"
+license: CC-BY-4.0
+repository: "https://github.com/as-agreed/as-delivered"
+abstract: "Ten runs of MAST-Data, each read hand-off by hand-off against the terms of its order. Third-party texts are cut and kept as sha256 and length; build/cut.py puts them back from the public source."
+keywords:
+  - multi-agent systems
+  - traces
+  - commitment fidelity
+  - MAST-Data

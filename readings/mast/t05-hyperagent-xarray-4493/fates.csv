@@ -1,0 +1,13 @@
+unit,kind,type,L00,L01,L02,L03,L04,L05,L06,L07,L08,L09,L10,L11,L12,L13,final,first_lost,site,correct,commit
+M1,term,question,intact,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,L01,source,,L10
+M2,term,object,intact,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,L01,source,,L10
+M3,term,criterion,intact,intact,intact,intact,intact,intact,intact,intact,substituted,restored,substituted,restored,restored,restored,substituted,L08,source,,L10
+M4,term,premise,intact,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,restored,restored,restored,narrowed,L01,seam,,L10
+M5,term,premise,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,,,,L10
+M6,term,premise,intact,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,L01,source,,L10
+M7,term,criterion,intact,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,L01,source,,L10
+C1,claim,flat,·,·,·,·,·,·,made,kept,kept,kept,kept,kept,kept,kept,kept,,,no,L10
+C2,claim,hedged,·,·,·,·,·,·,·,made,kept,kept,kept,hardened,hardened,hardened,kept,L11,seam,no,L10
+C3,claim,flat,·,·,·,·,·,·,·,·,made,kept,kept,dropped,dropped,dropped,kept,L11,sink,yes,L10
+C4,claim,hedged,·,·,·,·,·,·,·,·,made,kept,kept,kept,inverted,inverted,kept,L12,sink,no,L10
+MAST,mast,partly,,,,,,,,,,,,,,,3/3/8,,,,L10

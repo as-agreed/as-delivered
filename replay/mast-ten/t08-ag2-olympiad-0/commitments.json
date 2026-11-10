@@ -1,0 +1,221 @@
+{
+ "kind": "as_agreed_proxy",
+ "proxy": true,
+ "tag": "[C]",
+ "drafted_by": {
+  "mode": "exchange",
+  "model": "claude-opus-5-5",
+  "version": "claude-opus-5-5",
+  "date": "2026-11-04T15:10:07Z",
+  "prompt": "drafter-v1 (2026-11-04)"
+ },
+ "task_statement_sha256": "16bf8a46ae67696372d67c55a2b1e01ef319bcbec7801f13cd2e469b123e9c1e",
+ "obligor_obligee": "set by the harness, not drafted",
+ "commitments": [
+  {
+   "commitment_id": "task",
+   "act": "[cut 34 chars, sha256 f5bad1586a83]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST"
+  },
+  {
+   "commitment_id": "use_print",
+   "act": "[cut 39 chars, sha256 dccb752674d9]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "SHOULD",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "use_print_for_output",
+     "text": "Every output of the code is produced with the print function.",
+     "verification": "machine_checkable",
+     "field": "use_print_for_output"
+    }
+   ]
+  },
+  {
+   "commitment_id": "exact_forms",
+   "act": "[cut 47 chars, sha256 54dcb6b168a0]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "SHOULD",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "fractions_radicals_not_decimals",
+     "text": "Results are given as fractions or radical forms, not decimals.",
+     "verification": "machine_checkable",
+     "field": "fractions_radicals_not_decimals"
+    }
+   ]
+  },
+  {
+   "commitment_id": "code_format",
+   "act": "[cut 43 chars, sha256 45a1d1f229ec]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "python_code_fence_format",
+     "text": "Code is written inside a ```python fenced block.",
+     "verification": "machine_checkable",
+     "field": "python_code_fence_format"
+    }
+   ]
+  },
+  {
+   "commitment_id": "state_key_idea",
+   "act": "[cut 39 chars, sha256 0eddbe617511]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "state_key_idea_first",
+     "text": "The response begins by stating the key idea for solving the problem.",
+     "verification": "machine_checkable",
+     "field": "state_key_idea_first"
+    }
+   ]
+  },
+  {
+   "commitment_id": "solution_way",
+   "act": "[cut 43 chars, sha256 a89112e45261]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MAY",
+   "limit": {
+    "solution_case": {
+     "in": [
+      1,
+      2,
+      3
+     ]
+    }
+   },
+   "carried_by": {
+    "limit.solution_case": "solution_case"
+   }
+  },
+  {
+   "commitment_id": "no_over_divide",
+   "act": "[cut 30 chars, sha256 243ffb6b29d2]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST_NOT",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "no_over_divided_steps",
+     "text": "Under Case 3 the steps are not over-divided.",
+     "verification": "machine_checkable",
+     "field": "no_over_divided_steps"
+    }
+   ]
+  },
+  {
+   "commitment_id": "wait_for_results",
+   "act": "[cut 31 chars, sha256 35c52ff64848]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "wait_for_query_results",
+     "text": "Under Case 3 the solver stops after its Python queries and waits for the results to be given.",
+     "verification": "machine_checkable",
+     "field": "wait_for_query_results"
+    }
+   ]
+  },
+  {
+   "commitment_id": "boxed_answer",
+   "act": "[cut 26 chars, sha256 5d66ac757cfc]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "answer_in_boxed",
+     "text": "The final answer is placed inside \\boxed{}.",
+     "verification": "machine_checkable",
+     "field": "answer_in_boxed"
+    }
+   ]
+  },
+  {
+   "commitment_id": "closed_form_difference",
+   "act": "[cut 36 chars, sha256 1b1d8e0007f3]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "closed_form_even_minus_odd_weight",
+     "text": "The answer gives, in closed form, [cut 39 chars, sha256 e241191489b9] 2^2017 with even weight minus the number with odd weight.",
+     "verification": "machine_checkable",
+     "field": "closed_form_even_minus_odd_weight"
+    }
+   ]
+  }
+ ],
+ "quotes": {
+  "task": "[cut 41 chars, sha256 5fc53f54e8c1]",
+  "use_print": "[cut 57 chars, sha256 c88062884433]",
+  "exact_forms": "[cut 47 chars, sha256 54dcb6b168a0]",
+  "code_format": "[cut 52 chars, sha256 02a9370663b5]",
+  "state_key_idea": "[cut 45 chars, sha256 1ec19d4946db]",
+  "solution_way": "[cut 51 chars, sha256 5147686a65f8]",
+  "no_over_divide": "[cut 28 chars, sha256 f6353f53bb56]",
+  "wait_for_results": "[cut 32 chars, sha256 a56eab5510ee]",
+  "boxed_answer": "[cut 26 chars, sha256 5d66ac757cfc]",
+  "closed_form_difference": "[cut 36 chars, sha256 1b1d8e0007f3]"
+ },
+ "untyped": [
+  {
+   "quote": "[cut 44 chars, sha256 4be5d9c29ef4]",
+   "why": "permission, open choice of tools"
+  },
+  {
+   "quote": "[cut 154 chars, sha256 02454ee0beb1]",
+   "why": "conditional option, open choice"
+  },
+  {
+   "quote": "[cut 82 chars, sha256 417802b6f1f0]",
+   "why": "conditional option, open choice"
+  },
+  {
+   "quote": "[cut 122 chars, sha256 3d70c690facf]",
+   "why": "procedure step under Case 3, no checkable bound"
+  },
+  {
+   "quote": "[cut 124 chars, sha256 e433b9a29394]",
+   "why": "judgement left to the solver"
+  },
+  {
+   "quote": "[cut 16 chars, sha256 a21e67d7512b]",
+   "why": "the term weight is not defined in the statement"
+  }
+ ],
+ "dropped_by_check": [
+  {
+   "field": {
+    "id": "integer_range",
+    "type": "range",
+    "act": "[cut 50 chars, sha256 81e6d0e75099]",
+    "modality": "MUST",
+    "quote": "[cut 36 chars, sha256 85296d1231ed]",
+    "limit": {
+     "integer_min": {
+      "min": 1
+     },
+     "integer_max": {
+      "max": 15048778649098708900024591334476113300977322584816945731700558880122683541322076177782007219047710981075054947716136472064126077643824238840065967471547556631560845937254371164250279660518119161387932318441601269076015902051059415639302737237176005947674459708871461936685990491668258704528004116902095445209142907238410945246315083832742911528263323025464230244084170860858180649908473861473732904002152903343524599316744998729600734613976276435145967459880414992210979426610665493516790262296298203742913223142110136307331732133567798248592543027545063446994685630981451647656652367955517092809805578371072
+     }
+    }
+   },
+   "why": "refused by the record schema: OverflowError: int too large to convert to float"
+  }
+ ],
+ "reused_from": "results/2026-11-04-mast-ten-v2/t08-ag2-olympiad-0/commitments.json"
+}

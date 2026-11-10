@@ -1,0 +1,15 @@
+unit,kind,type,L00,L01,L02,L03,final,first_lost,site,correct,commit
+M1,term,question,intact,intact,intact,intact,intact,,,,L03
+M2,term,object,intact,substituted,substituted,substituted,substituted,L01,source,,L03
+M3,term,premise,intact,intact,intact,intact,intact,,,,L03
+M4,term,criterion,intact,intact,intact,intact,intact,,,,L03
+M5,term,frame,intact,intact,intact,intact,intact,,,,L03
+M6,term,frame,intact,intact,intact,intact,intact,,,,L03
+M7,term,frame,intact,intact,intact,intact,intact,,,,L03
+M8,term,criterion,intact,intact,intact,intact,intact,,,,L03
+M9,term,criterion,intact,intact,intact,intact,intact,,,,L03
+M10,term,frame,intact,narrowed,narrowed,restored,restored,L01,source,,L03
+C1,claim,flat,·,made,kept,kept,kept,,,unknown,L03
+C2,claim,hedged,·,made,kept,kept,kept,,,yes,L03
+C3,claim,flat,·,made,kept,kept,kept,,,no,L03
+MAST,mast,disagree,,,,,0/0/2,,,,L03

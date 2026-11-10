@@ -1,0 +1,85 @@
+{
+ "kind": "as_agreed_proxy",
+ "proxy": true,
+ "tag": "[C]",
+ "drafted_by": {
+  "mode": "exchange",
+  "model": "claude-opus-5-5",
+  "version": "claude-opus-5-5",
+  "date": "2026-11-04T15:09:59Z",
+  "prompt": "drafter-v1 (2026-11-04)"
+ },
+ "task_statement_sha256": "7dd8362fb8c82bea71e6c8f2b93b063accc07b500b5293bae113d3db190a583a",
+ "obligor_obligee": "set by the harness, not drafted",
+ "commitments": [
+  {
+   "commitment_id": "task",
+   "act": "[cut 46 chars, sha256 28efedc61d22]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST"
+  },
+  {
+   "commitment_id": "comparable_version",
+   "act": "[cut 46 chars, sha256 28efedc61d22]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "toplevel_comparable_version_info",
+     "text": "The top-level matplotlib package exposes version information that can be compared directly.",
+     "verification": "machine_checkable",
+     "field": "toplevel_comparable_version_info"
+    }
+   ]
+  },
+  {
+   "commitment_id": "version_object",
+   "act": "[cut 38 chars, sha256 5cf947e6b916] [cut 28 chars, sha256 78f19de88adb]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MAY",
+   "limit": {
+    "version_object": {
+     "in": [
+      "version_info",
+      "LooseVersion"
+     ]
+    }
+   },
+   "carried_by": {
+    "limit.version_object": "version_object"
+   }
+  }
+ ],
+ "quotes": {
+  "task": "[cut 46 chars, sha256 28efedc61d22]",
+  "comparable_version": "[cut 46 chars, sha256 28efedc61d22]",
+  "version_object": "[cut 161 chars, sha256 4a4eab8d8012]"
+ },
+ "untyped": [
+  {
+   "quote": "[cut 48 chars, sha256 f29f4494886a]",
+   "why": "current state, context"
+  },
+  {
+   "quote": "[cut 157 chars, sha256 3b27cf4b185e]",
+   "why": "stated preference, open choice"
+  },
+  {
+   "quote": "[cut 95 chars, sha256 bee34df1c4f1]",
+   "why": "context remark"
+  },
+  {
+   "quote": "[cut 58 chars, sha256 0d8b12a40e1e]",
+   "why": "context remark"
+  },
+  {
+   "quote": "[cut 93 chars, sha256 9c911681d5e5]",
+   "why": "issue template text addressed to the reporter"
+  }
+ ],
+ "dropped_by_check": [],
+ "reused_from": "results/2026-11-04-mast-ten-v2/t07-hyperagent-matplotlib-18869/commitments.json"
+}

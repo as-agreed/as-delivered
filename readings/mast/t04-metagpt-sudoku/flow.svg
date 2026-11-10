@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="860" viewBox="0 0 1600 860" font-family="Helvetica, Arial, sans-serif">
+<rect width="1600" height="860" fill="#ffffff"/>
+<style>.lbl{font-size:13px;fill:#222}.sub{font-size:11px;fill:#666}.hdr{font-size:14px;font-weight:600;fill:#222}.ttl{font-size:20px;font-weight:600;fill:#111}.stt{font-size:13px;fill:#444}.fn{font-size:11px;fill:#555}path.rib:hover{opacity:0.95}</style>
+<text class="ttl" x="250" y="34">t04 MetaGPT (line), MAST-Data row 31: where the order's terms and the claims' status went</text>
+<text class="stt" x="250" y="56">7 terms of the task-as-stated proxy and 3 claims; 6 links, of which 5 drawn</text>
+<text class="hdr" x="259.0" y="88" text-anchor="middle">unit</text>
+<text class="hdr" x="467.4" y="88" text-anchor="middle">L00 order</text>
+<text class="hdr" x="675.8" y="88" text-anchor="middle">L01 Coder commit</text>
+<text class="hdr" x="884.2" y="88" text-anchor="middle">L02 Tester</text>
+<text class="hdr" x="1092.6" y="88" text-anchor="middle">L03 Reviewer</text>
+<text class="hdr" x="1301.0" y="88" text-anchor="middle">L04 Tester</text>
+<path class="rib" d="M268.0,117.0 C363.2,117.0 363.2,546.8 458.4,546.8 L458.4,719.0 C363.2,719.0 363.2,289.2 268.0,289.2 Z" fill="#6f9f6f" fill-opacity="0.55" stroke="none"><title>claim (flat) → not yet (origin claim (flat)): 3</title></path>
+<path class="rib" d="M268.0,303.2 C363.2,303.2 363.2,131.0 458.4,131.0 L458.4,418.0 C363.2,418.0 363.2,590.2 268.0,590.2 Z" fill="#d9b92f" fill-opacity="0.55" stroke="none"><title>term (criterion) → intact (origin term (criterion)): 5</title></path>
+<path class="rib" d="M268.0,604.2 C363.2,604.2 363.2,418.0 458.4,418.0 L458.4,475.4 C363.2,475.4 363.2,661.6 268.0,661.6 Z" fill="#e5862e" fill-opacity="0.55" stroke="none"><title>term (object) → intact (origin term (object)): 1</title></path>
+<path class="rib" d="M268.0,675.6 C363.2,675.6 363.2,475.4 458.4,475.4 L458.4,532.8 C363.2,532.8 363.2,733.0 268.0,733.0 Z" fill="#4a6fa5" fill-opacity="0.55" stroke="none"><title>term (question) → intact (origin term (question)): 1</title></path>
+<path class="rib" d="M476.4,131.0 C571.6,131.0 571.6,117.0 666.8,117.0 L666.8,346.6 C571.6,346.6 571.6,360.6 476.4,360.6 Z" fill="#d9b92f" fill-opacity="0.55" stroke="none"><title>intact → narrowed (origin term (criterion)): 4</title></path>
+<path class="rib" d="M476.4,360.6 C571.6,360.6 571.6,346.6 666.8,346.6 L666.8,404.0 C571.6,404.0 571.6,418.0 476.4,418.0 Z" fill="#e5862e" fill-opacity="0.55" stroke="none"><title>intact → narrowed (origin term (object)): 1</title></path>
+<path class="rib" d="M476.4,418.0 C571.6,418.0 571.6,418.0 666.8,418.0 L666.8,475.4 C571.6,475.4 571.6,475.4 476.4,475.4 Z" fill="#d9b92f" fill-opacity="0.55" stroke="none"><title>intact → intact (origin term (criterion)): 1</title></path>
+<path class="rib" d="M476.4,475.4 C571.6,475.4 571.6,475.4 666.8,475.4 L666.8,532.8 C571.6,532.8 571.6,532.8 476.4,532.8 Z" fill="#4a6fa5" fill-opacity="0.55" stroke="none"><title>intact → intact (origin term (question)): 1</title></path>
+<path class="rib" d="M476.4,546.8 C571.6,546.8 571.6,546.8 666.8,546.8 L666.8,661.6 C571.6,661.6 571.6,661.6 476.4,661.6 Z" fill="#6f9f6f" fill-opacity="0.55" stroke="none"><title>not yet → not yet (origin claim (flat)): 2</title></path>
+<path class="rib" d="M476.4,661.6 C571.6,661.6 571.6,675.6 666.8,675.6 L666.8,733.0 C571.6,733.0 571.6,719.0 476.4,719.0 Z" fill="#6f9f6f" fill-opacity="0.55" stroke="none"><title>not yet → made (origin claim (flat)): 1</title></path>
+<path class="rib" d="M684.8,117.0 C780.0,117.0 780.0,117.0 875.2,117.0 L875.2,346.6 C780.0,346.6 780.0,346.6 684.8,346.6 Z" fill="#c0392b" fill-opacity="0.55" stroke="none"><title>narrowed → narrowed (origin term (criterion), red path): 4</title></path>
+<path class="rib" d="M684.8,346.6 C780.0,346.6 780.0,346.6 875.2,346.6 L875.2,404.0 C780.0,404.0 780.0,404.0 684.8,404.0 Z" fill="#c0392b" fill-opacity="0.55" stroke="none"><title>narrowed → narrowed (origin term (object), red path): 1</title></path>
+<path class="rib" d="M684.8,418.0 C780.0,418.0 780.0,418.0 875.2,418.0 L875.2,475.4 C780.0,475.4 780.0,475.4 684.8,475.4 Z" fill="#d9b92f" fill-opacity="0.55" stroke="none"><title>intact → intact (origin term (criterion)): 1</title></path>
+<path class="rib" d="M684.8,475.4 C780.0,475.4 780.0,475.4 875.2,475.4 L875.2,532.8 C780.0,532.8 780.0,532.8 684.8,532.8 Z" fill="#4a6fa5" fill-opacity="0.55" stroke="none"><title>intact → intact (origin term (question)): 1</title></path>
+<path class="rib" d="M684.8,546.8 C780.0,546.8 780.0,546.8 875.2,546.8 L875.2,661.6 C780.0,661.6 780.0,661.6 684.8,661.6 Z" fill="#6f9f6f" fill-opacity="0.55" stroke="none"><title>not yet → not yet (origin claim (flat)): 2</title></path>
+<path class="rib" d="M684.8,675.6 C780.0,675.6 780.0,675.6 875.2,675.6 L875.2,733.0 C780.0,733.0 780.0,733.0 684.8,733.0 Z" fill="#6f9f6f" fill-opacity="0.55" stroke="none"><title>made → kept (origin claim (flat)): 1</title></path>
+<path class="rib" d="M893.2,117.0 C988.4,117.0 988.4,110.0 1083.6,110.0 L1083.6,224.8 C988.4,224.8 988.4,231.8 893.2,231.8 Z" fill="#c0392b" fill-opacity="0.55" stroke="none"><title>narrowed → narrowed (origin term (criterion), red path): 2</title></path>
+<path class="rib" d="M893.2,231.8 C988.4,231.8 988.4,224.8 1083.6,224.8 L1083.6,282.2 C988.4,282.2 988.4,289.2 893.2,289.2 Z" fill="#c0392b" fill-opacity="0.55" stroke="none"><title>narrowed → narrowed (origin term (object), red path): 1</title></path>
+<path class="rib" d="M893.2,289.2 C988.4,289.2 988.4,425.0 1083.6,425.0 L1083.6,539.8 C988.4,539.8 988.4,404.0 893.2,404.0 Z" fill="#c0392b" fill-opacity="0.55" stroke="none"><title>narrowed → restored (origin term (criterion), red path): 2</title></path>
+<path class="rib" d="M893.2,418.0 C988.4,418.0 988.4,296.2 1083.6,296.2 L1083.6,353.6 C988.4,353.6 988.4,475.4 893.2,475.4 Z" fill="#d9b92f" fill-opacity="0.55" stroke="none"><title>intact → intact (origin term (criterion)): 1</title></path>
+<path class="rib" d="M893.2,475.4 C988.4,475.4 988.4,353.6 1083.6,353.6 L1083.6,411.0 C988.4,411.0 988.4,532.8 893.2,532.8 Z" fill="#4a6fa5" fill-opacity="0.55" stroke="none"><title>intact → intact (origin term (question)): 1</title></path>
+<path class="rib" d="M893.2,546.8 C988.4,546.8 988.4,553.8 1083.6,553.8 L1083.6,668.6 C988.4,668.6 988.4,661.6 893.2,661.6 Z" fill="#6f9f6f" fill-opacity="0.55" stroke="none"><title>not yet → made (origin claim (flat)): 2</title></path>
+<path class="rib" d="M893.2,675.6 C988.4,675.6 988.4,682.6 1083.6,682.6 L1083.6,740.0 C988.4,740.0 988.4,733.0 893.2,733.0 Z" fill="#6f9f6f" fill-opacity="0.55" stroke="none"><title>kept → kept (origin claim (flat)): 1</title></path>
+<path class="rib" d="M1101.6,110.0 C1196.8,110.0 1196.8,110.0 1292.0,110.0 L1292.0,224.8 C1196.8,224.8 1196.8,224.8 1101.6,224.8 Z" fill="#c0392b" fill-opacity="0.55" stroke="none"><title>narrowed → narrowed (origin term (criterion), red path): 2</title></path>
+<path class="rib" d="M1101.6,224.8 C1196.8,224.8 1196.8,224.8 1292.0,224.8 L1292.0,282.2 C1196.8,282.2 1196.8,282.2 1101.6,282.2 Z" fill="#c0392b" fill-opacity="0.55" stroke="none"><title>narrowed → narrowed (origin term (object), red path): 1</title></path>
+<path class="rib" d="M1101.6,296.2 C1196.8,296.2 1196.8,296.2 1292.0,296.2 L1292.0,353.6 C1196.8,353.6 1196.8,353.6 1101.6,353.6 Z" fill="#d9b92f" fill-opacity="0.55" stroke="none"><title>intact → intact (origin term (criterion)): 1</title></path>
+<path class="rib" d="M1101.6,353.6 C1196.8,353.6 1196.8,353.6 1292.0,353.6 L1292.0,411.0 C1196.8,411.0 1196.8,411.0 1101.6,411.0 Z" fill="#4a6fa5" fill-opacity="0.55" stroke="none"><title>intact → intact (origin term (question)): 1</title></path>
+<path class="rib" d="M1101.6,425.0 C1196.8,425.0 1196.8,425.0 1292.0,425.0 L1292.0,539.8 C1196.8,539.8 1196.8,539.8 1101.6,539.8 Z" fill="#c0392b" fill-opacity="0.55" stroke="none"><title>restored → restored (origin term (criterion), red path): 2</title></path>
+<path class="rib" d="M1101.6,553.8 C1196.8,553.8 1196.8,553.8 1292.0,553.8 L1292.0,611.2 C1196.8,611.2 1196.8,611.2 1101.6,611.2 Z" fill="#6f9f6f" fill-opacity="0.55" stroke="none"><title>made → kept (origin claim (flat)): 1</title></path>
+<path class="rib" d="M1101.6,611.2 C1196.8,611.2 1196.8,682.6 1292.0,682.6 L1292.0,740.0 C1196.8,740.0 1196.8,668.6 1101.6,668.6 Z" fill="#6f9f6f" fill-opacity="0.55" stroke="none"><title>made → dropped (origin claim (flat)): 1</title></path>
+<path class="rib" d="M1101.6,682.6 C1196.8,682.6 1196.8,611.2 1292.0,611.2 L1292.0,668.6 C1196.8,668.6 1196.8,740.0 1101.6,740.0 Z" fill="#6f9f6f" fill-opacity="0.55" stroke="none"><title>kept → kept (origin claim (flat)): 1</title></path>
+<rect x="250.0" y="117.0" width="18" height="172.2" fill="#6f9f6f" stroke="#333" stroke-width="0.8"><title>claim (flat): 3</title></rect>
+<rect x="250.0" y="303.2" width="18" height="287.0" fill="#d9b92f" stroke="#333" stroke-width="0.8"><title>term (criterion): 5</title></rect>
+<rect x="250.0" y="604.2" width="18" height="57.4" fill="#e5862e" stroke="#333" stroke-width="0.8"><title>term (object): 1</title></rect>
+<rect x="250.0" y="675.6" width="18" height="57.4" fill="#4a6fa5" stroke="#333" stroke-width="0.8"><title>term (question): 1</title></rect>
+<text class="lbl" x="240.0" y="207.1" text-anchor="end">claim (flat)  <tspan font-weight="600">3</tspan></text>
+<text class="lbl" x="240.0" y="450.7" text-anchor="end">term (criterion)  <tspan font-weight="600">5</tspan></text>
+<text class="lbl" x="240.0" y="636.9" text-anchor="end">term (object)  <tspan font-weight="600">1</tspan></text>
+<text class="lbl" x="240.0" y="708.3" text-anchor="end">term (question)  <tspan font-weight="600">1</tspan></text>
+<rect x="458.4" y="131.0" width="18" height="401.8" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>intact: 7</title></rect>
+<rect x="458.4" y="546.8" width="18" height="172.2" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>not yet: 3</title></rect>
+<text class="lbl" x="486.4" y="335.9" text-anchor="start"><tspan font-weight="600">7</tspan>  intact</text>
+<text class="lbl" x="486.4" y="636.9" text-anchor="start"><tspan font-weight="600">3</tspan>  not yet</text>
+<rect x="666.8" y="117.0" width="18" height="287.0" fill="#c0392b" stroke="#c0392b" stroke-width="2.5"><title>narrowed: 5</title></rect>
+<rect x="666.8" y="418.0" width="18" height="114.8" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>intact: 2</title></rect>
+<rect x="666.8" y="546.8" width="18" height="114.8" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>not yet: 2</title></rect>
+<rect x="666.8" y="675.6" width="18" height="57.4" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>made: 1</title></rect>
+<text class="lbl" x="694.8" y="264.5" text-anchor="start"><tspan font-weight="600">5</tspan>  narrowed</text>
+<text class="lbl" x="694.8" y="479.4" text-anchor="start"><tspan font-weight="600">2</tspan>  intact</text>
+<text class="lbl" x="694.8" y="608.2" text-anchor="start"><tspan font-weight="600">2</tspan>  not yet</text>
+<text class="lbl" x="694.8" y="708.3" text-anchor="start"><tspan font-weight="600">1</tspan>  made</text>
+<rect x="875.2" y="117.0" width="18" height="287.0" fill="#c0392b" stroke="#c0392b" stroke-width="2.5"><title>narrowed: 5</title></rect>
+<rect x="875.2" y="418.0" width="18" height="114.8" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>intact: 2</title></rect>
+<rect x="875.2" y="546.8" width="18" height="114.8" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>not yet: 2</title></rect>
+<rect x="875.2" y="675.6" width="18" height="57.4" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>kept: 1</title></rect>
+<text class="lbl" x="903.2" y="264.5" text-anchor="start"><tspan font-weight="600">5</tspan>  narrowed</text>
+<text class="lbl" x="903.2" y="479.4" text-anchor="start"><tspan font-weight="600">2</tspan>  intact</text>
+<text class="lbl" x="903.2" y="608.2" text-anchor="start"><tspan font-weight="600">2</tspan>  not yet</text>
+<text class="lbl" x="903.2" y="708.3" text-anchor="start"><tspan font-weight="600">1</tspan>  kept</text>
+<rect x="1083.6" y="110.0" width="18" height="172.2" fill="#c0392b" stroke="#c0392b" stroke-width="2.5"><title>narrowed: 3</title></rect>
+<rect x="1083.6" y="296.2" width="18" height="114.8" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>intact: 2</title></rect>
+<rect x="1083.6" y="425.0" width="18" height="114.8" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>restored: 2</title></rect>
+<rect x="1083.6" y="553.8" width="18" height="114.8" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>made: 2</title></rect>
+<rect x="1083.6" y="682.6" width="18" height="57.4" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>kept: 1</title></rect>
+<text class="lbl" x="1111.6" y="200.1" text-anchor="start"><tspan font-weight="600">3</tspan>  narrowed</text>
+<text class="lbl" x="1111.6" y="357.6" text-anchor="start"><tspan font-weight="600">2</tspan>  intact</text>
+<text class="lbl" x="1111.6" y="486.4" text-anchor="start"><tspan font-weight="600">2</tspan>  restored</text>
+<text class="lbl" x="1111.6" y="615.2" text-anchor="start"><tspan font-weight="600">2</tspan>  made</text>
+<text class="lbl" x="1111.6" y="715.3" text-anchor="start"><tspan font-weight="600">1</tspan>  kept</text>
+<rect x="1292.0" y="110.0" width="18" height="172.2" fill="#c0392b" stroke="#c0392b" stroke-width="2.5"><title>narrowed: 3</title></rect>
+<rect x="1292.0" y="296.2" width="18" height="114.8" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>intact: 2</title></rect>
+<rect x="1292.0" y="425.0" width="18" height="114.8" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>restored: 2</title></rect>
+<rect x="1292.0" y="553.8" width="18" height="114.8" fill="#b8b8b8" stroke="#333" stroke-width="0.8"><title>kept: 2</title></rect>
+<rect x="1292.0" y="682.6" width="18" height="57.4" fill="#c0392b" stroke="#c0392b" stroke-width="2.5"><title>dropped: 1</title></rect>
+<text class="lbl" x="1320.0" y="200.1" text-anchor="start"><tspan font-weight="600">3</tspan>  narrowed</text>
+<text class="lbl" x="1320.0" y="357.6" text-anchor="start"><tspan font-weight="600">2</tspan>  intact</text>
+<text class="lbl" x="1320.0" y="486.4" text-anchor="start"><tspan font-weight="600">2</tspan>  restored</text>
+<text class="lbl" x="1320.0" y="615.2" text-anchor="start"><tspan font-weight="600">2</tspan>  kept</text>
+<text class="lbl" x="1320.0" y="715.3" text-anchor="start"><tspan font-weight="600">1</tspan>  dropped</text>
+<text class="fn" x="250" y="768">One run, read by a model, no second rater [C]; reconciled against the task-as-stated proxy, written before the run was read.</text>
+<text class="fn" x="250" y="786">Columns: the order (L00), every link where a state changed, the commit. Red: narrowed, substituted, absent, softened, hardened, dropped, inverted.</text>
+<text class="fn" x="250" y="804">Source: MAST-Data (CC BY 4.0), MetaGPT on ProgramDev with GPT-4o; changed: scrubbed, split into links, read.</text>
+</svg>

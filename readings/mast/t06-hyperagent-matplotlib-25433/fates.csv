@@ -1,0 +1,16 @@
+unit,kind,type,L00,L01,L02,L03,L04,L05,L06,L07,L08,L09,L10,L11,L12,L13,final,first_lost,site,correct,commit
+M1,term,question,intact,intact,intact,intact,intact,intact,intact,substituted,substituted,substituted,substituted,restored,restored,restored,substituted,L07,source,,L08
+M2,term,object,intact,intact,intact,intact,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,narrowed,restored,restored,restored,narrowed,L04,seam,,L08
+M3,term,criterion,intact,intact,intact,intact,intact,intact,intact,substituted,substituted,substituted,substituted,restored,restored,restored,substituted,L07,source,,L08
+M4,term,premise,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,,,,L08
+M5,term,premise,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,,,,L08
+M6,term,premise,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,,,,L08
+M7,term,premise,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,intact,,,,L08
+C1,claim,flat,·,·,made,dropped,dropped,dropped,dropped,dropped,dropped,dropped,dropped,dropped,dropped,dropped,dropped,L03,source,yes,L08
+C2,claim,flat,·,·,·,·,made,kept,kept,kept,kept,kept,kept,kept,kept,kept,kept,,,no,L08
+C3,claim,hedged,·,·,·,·,·,made,kept,kept,kept,kept,kept,kept,kept,hardened,kept,L13,sink,no,L08
+C4,claim,flat,·,·,·,·,·,·,·,·,dropped,dropped,dropped,dropped,dropped,dropped,dropped,L08,seam,yes,L08
+C5,claim,flat,·,·,·,·,·,·,·,·,made,kept,kept,hardened,hardened,hardened,made,L11,source,no,L08
+C6,claim,flat,·,·,·,·,·,·,·,·,·,·,made,hardened,hardened,hardened,·,L11,source,yes,L08
+C7,claim,hedged,·,·,·,·,·,·,·,·,·,·,·,·,made,hardened,·,L13,seam,no,L08
+MAST,mast,partly,,,,,,,,,,,,,,,2/2/5,,,,L08

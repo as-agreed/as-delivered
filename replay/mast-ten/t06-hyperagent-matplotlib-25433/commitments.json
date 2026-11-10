@@ -1,0 +1,66 @@
+{
+ "kind": "as_agreed_proxy",
+ "proxy": true,
+ "tag": "[C]",
+ "drafted_by": {
+  "mode": "exchange",
+  "model": "claude-opus-5-5",
+  "version": "claude-opus-5-5",
+  "date": "2026-11-04T15:09:57Z",
+  "prompt": "drafter-v1 (2026-11-04)"
+ },
+ "task_statement_sha256": "24436ac63cb7d17f518f974a13e8bc6d25f001322d10455e0a52d73952ed5b87",
+ "obligor_obligee": "set by the harness, not drafted",
+ "commitments": [
+  {
+   "commitment_id": "task",
+   "act": "make the [cut 32 chars, sha256 dfc9177773f5] behave [cut 42 chars, sha256 da44d050ab3f]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST"
+  },
+  {
+   "commitment_id": "same_as_button",
+   "act": "[cut 50 chars, sha256 de8277ffe541]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "SHOULD",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "rangeslider_on_changed_like_button_on_clicked",
+     "text": "Calling clf, [cut 22 chars, sha256 8d6b43c3eb94] pyplot.draw in a RangeSlider on_changed callback leaves all widgets receiving mouse input, as the same code does in a Button on_clicked callback.",
+     "verification": "machine_checkable",
+     "field": "rangeslider_on_changed_like_button_on_clicked"
+    }
+   ]
+  }
+ ],
+ "quotes": {
+  "task": "[cut 88 chars, sha256 91b3dbeee201]",
+  "same_as_button": "[cut 88 chars, sha256 91b3dbeee201]"
+ },
+ "untyped": [
+  {
+   "quote": "[cut 116 chars, sha256 c0a6d266ffb9]",
+   "why": "actual outcome, describes the defect"
+  },
+  {
+   "quote": "[cut 41 chars, sha256 577318d03368]",
+   "why": "actual outcome, context"
+  },
+  {
+   "quote": "[cut 10 chars, sha256 b31d8319ff6e]",
+   "why": "environment of the report, not a commitment"
+  },
+  {
+   "quote": "[cut 5 chars, sha256 ea08ca9e3900]",
+   "why": "environment of the report, not a commitment"
+  },
+  {
+   "quote": "[cut 25 chars, sha256 e602a6f2d570]",
+   "why": "environment of the report, not a commitment"
+  }
+ ],
+ "dropped_by_check": [],
+ "reused_from": "results/2026-11-04-mast-ten-v2/t06-hyperagent-matplotlib-25433/commitments.json"
+}

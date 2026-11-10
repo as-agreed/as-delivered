@@ -1,0 +1,168 @@
+{
+ "kind": "as_agreed_proxy",
+ "proxy": true,
+ "tag": "[C]",
+ "drafted_by": {
+  "mode": "exchange",
+  "model": "claude-opus-5-5",
+  "version": "claude-opus-5-5",
+  "date": "2026-11-04T15:09:52Z",
+  "prompt": "drafter-v1 (2026-11-04)"
+ },
+ "task_statement_sha256": "6dc2b590dc350ceb8089121f508086eb7d6ae4fb20515669e8b8843200fead98",
+ "obligor_obligee": "set by the harness, not drafted",
+ "commitments": [
+  {
+   "commitment_id": "task",
+   "act": "[cut 36 chars, sha256 14aa41d947fd]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST"
+  },
+  {
+   "commitment_id": "grid_size",
+   "act": "[cut 15 chars, sha256 edce6eb03031]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "limit": {
+    "grid_rows": {
+     "in": [
+      9
+     ]
+    },
+    "grid_cols": {
+     "in": [
+      9
+     ]
+    }
+   },
+   "carried_by": {
+    "limit.grid_rows": "grid_rows",
+    "limit.grid_cols": "grid_cols"
+   }
+  },
+  {
+   "commitment_id": "subgrid_size",
+   "act": "[cut 43 chars, sha256 00dd4038b899]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "limit": {
+    "subgrid_rows": {
+     "in": [
+      3
+     ]
+    },
+    "subgrid_cols": {
+     "in": [
+      3
+     ]
+    }
+   },
+   "carried_by": {
+    "limit.subgrid_rows": "subgrid_rows",
+    "limit.subgrid_cols": "subgrid_cols"
+   }
+  },
+  {
+   "commitment_id": "digit_range",
+   "act": "[cut 43 chars, sha256 00dd4038b899]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "limit": {
+    "digit_min": {
+     "min": 1
+    },
+    "digit_max": {
+     "max": 9
+    }
+   },
+   "carried_by": {
+    "limit.digit_min": "digit_min",
+    "limit.digit_max": "digit_max"
+   }
+  },
+  {
+   "commitment_id": "digit_occurrences",
+   "act": "[cut 43 chars, sha256 00dd4038b899]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "limit": {
+    "occurrences_per_unit": {
+     "in": [
+      1
+     ]
+    }
+   },
+   "carried_by": {
+    "limit.occurrences_per_unit": "occurrences_per_unit"
+   }
+  },
+  {
+   "commitment_id": "input_values",
+   "act": "[cut 51 chars, sha256 369b1adcc343]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "SHOULD",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "player_inputs_cell_values",
+     "text": "The player can enter a value into a chosen cell.",
+     "verification": "machine_checkable",
+     "field": "player_inputs_cell_values"
+    }
+   ]
+  },
+  {
+   "commitment_id": "check_mistakes",
+   "act": "check for mistakes",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "SHOULD",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "check_for_mistakes",
+     "text": "The program checks the player's entries for mistakes.",
+     "verification": "machine_checkable",
+     "field": "check_for_mistakes"
+    }
+   ]
+  },
+  {
+   "commitment_id": "confirm_completion",
+   "act": "[cut 36 chars, sha256 a8852578adac]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "SHOULD",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "confirm_puzzle_completed",
+     "text": "The program confirms to the player [cut 29 chars, sha256 16cce00d17bc]",
+     "verification": "machine_checkable",
+     "field": "confirm_puzzle_completed"
+    }
+   ]
+  }
+ ],
+ "quotes": {
+  "task": "[cut 36 chars, sha256 14aa41d947fd]",
+  "grid_size": "[cut 15 chars, sha256 edce6eb03031]",
+  "subgrid_size": "[cut 33 chars, sha256 5da68de2f1a6]",
+  "digit_range": "[cut 22 chars, sha256 03ae320d5928]",
+  "digit_occurrences": "[cut 12 chars, sha256 990e96e1550c]",
+  "input_values": "[cut 70 chars, sha256 795d4f27c6b7]",
+  "check_mistakes": "[cut 18 chars, sha256 4a781e87d40c]",
+  "confirm_completion": "[cut 36 chars, sha256 a8852578adac]"
+ },
+ "untyped": [
+  {
+   "quote": "[cut 7 chars, sha256 b002a634647c]",
+   "why": "style word, no checkable bound"
+  }
+ ],
+ "dropped_by_check": [],
+ "reused_from": "results/2026-11-04-mast-ten-v2/t04-metagpt-sudoku/commitments.json"
+}

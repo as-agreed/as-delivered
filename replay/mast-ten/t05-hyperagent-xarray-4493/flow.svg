@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="841" viewBox="0 0 1500 841" font-family="Helvetica, Arial, sans-serif">
+<rect width="1500" height="841" fill="#ffffff"/>
+<style>.lbl{font-size:13px;fill:#222}.sub{font-size:11px;fill:#666}.hdr{font-size:14px;font-weight:600;fill:#222}.ttl{font-size:20px;font-weight:600;fill:#111}.stt{font-size:13px;fill:#444}.fn{font-size:11px;fill:#555}path.rib:hover{opacity:0.95}</style>
+<text class="ttl" x="230" y="34">agreed an acceptance criterion of a SHOULD commitment, arrived weaker than agreed (WEAKENED), at step</text>
+<text class="ttl" x="230" y="60">L08-editor#1@1, not held (the commit passed)</text>
+<text class="stt" x="230" y="82">0 of 0 decided MUST fields changed. Where did the commitments go? t05-hyperagent-xarray-4493. One ribbon per commitment field per link; red = a change</text>
+<text class="stt" x="230" y="99">to what was agreed, or a field that held the commit; claim sentences, matched by shared words, are one grey band per link. Counts only.</text>
+<text class="hdr" x="239.0" y="115" text-anchor="middle">commitment fields at</text>
+<text class="hdr" x="239.0" y="131" text-anchor="middle">origin</text>
+<text class="hdr" x="312.2" y="131" text-anchor="middle">at L01-planner#1@1</text>
+<text class="hdr" x="385.5" y="131" text-anchor="middle">at L02-navigator#1@1</text>
+<text class="hdr" x="458.7" y="131" text-anchor="middle">at L03-planner#1@1</text>
+<text class="hdr" x="531.9" y="131" text-anchor="middle">at L04-navigator#1@1</text>
+<text class="hdr" x="605.2" y="131" text-anchor="middle">at L05-planner#1@1</text>
+<text class="hdr" x="678.4" y="131" text-anchor="middle">at L06-navigator#1@1</text>
+<text class="hdr" x="751.6" y="131" text-anchor="middle">at L07-planner#1@1</text>
+<text class="hdr" x="824.8" y="131" text-anchor="middle">at L08-editor#1@1</text>
+<text class="hdr" x="898.1" y="131" text-anchor="middle">at L09-planner#1@1</text>
+<text class="hdr" x="971.3" y="131" text-anchor="middle">at L10-editor#1@1</text>
+<text class="hdr" x="1044.5" y="131" text-anchor="middle">at L11-planner#1@1</text>
+<text class="hdr" x="1117.8" y="131" text-anchor="middle">at L12-executor#1@1</text>
+<text class="hdr" x="1191.0" y="131" text-anchor="middle">at L13-planner#1@1</text>
+<path class="rib" d="M248.0,153.0 C275.6,153.0 275.6,160.0 303.2,160.0 L303.2,371.6 C275.6,371.6 275.6,364.6 248.0,364.6 Z" fill="#3b7a57" fill-opacity="0.55" stroke="none"><title>o::commitment::MUST -&gt; L01-planner#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M321.2,160.0 C348.8,160.0 348.8,160.0 376.5,160.0 L376.5,371.6 C348.8,371.6 348.8,371.6 321.2,371.6 Z" fill="#3b7a57" fill-opacity="0.55" stroke="none"><title>L01-planner#1@1::commitment::UNDECLARED -&gt; L02-navigator#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M394.5,160.0 C422.1,160.0 422.1,160.0 449.7,160.0 L449.7,371.6 C422.1,371.6 422.1,371.6 394.5,371.6 Z" fill="#3b7a57" fill-opacity="0.55" stroke="none"><title>L02-navigator#1@1::commitment::UNDECLARED -&gt; L03-planner#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M467.7,160.0 C495.3,160.0 495.3,160.0 522.9,160.0 L522.9,371.6 C495.3,371.6 495.3,371.6 467.7,371.6 Z" fill="#3b7a57" fill-opacity="0.55" stroke="none"><title>L03-planner#1@1::commitment::UNDECLARED -&gt; L04-navigator#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M540.9,160.0 C568.5,160.0 568.5,160.0 596.2,160.0 L596.2,371.6 C568.5,371.6 568.5,371.6 540.9,371.6 Z" fill="#3b7a57" fill-opacity="0.55" stroke="none"><title>L04-navigator#1@1::commitment::UNDECLARED -&gt; L05-planner#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M614.2,160.0 C641.8,160.0 641.8,160.0 669.4,160.0 L669.4,371.6 C641.8,371.6 641.8,371.6 614.2,371.6 Z" fill="#3b7a57" fill-opacity="0.55" stroke="none"><title>L05-planner#1@1::commitment::UNDECLARED -&gt; L06-navigator#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M321.2,371.6 C348.8,371.6 348.8,371.6 376.5,371.6 L376.5,636.0 C348.8,636.0 348.8,636.0 321.2,636.0 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L01-planner#1@1::commitment::UNDECLARED -&gt; L02-navigator#1@1::commitment::UNDECLARED: 5</title></path>
+<path class="rib" d="M394.5,371.6 C422.1,371.6 422.1,371.6 449.7,371.6 L449.7,636.0 C422.1,636.0 422.1,636.0 394.5,636.0 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L02-navigator#1@1::commitment::UNDECLARED -&gt; L03-planner#1@1::commitment::UNDECLARED: 5</title></path>
+<path class="rib" d="M467.7,371.6 C495.3,371.6 495.3,371.6 522.9,371.6 L522.9,636.0 C495.3,636.0 495.3,636.0 467.7,636.0 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L03-planner#1@1::commitment::UNDECLARED -&gt; L04-navigator#1@1::commitment::UNDECLARED: 5</title></path>
+<path class="rib" d="M540.9,371.6 C568.5,371.6 568.5,371.6 596.2,371.6 L596.2,636.0 C568.5,636.0 568.5,636.0 540.9,636.0 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L04-navigator#1@1::commitment::UNDECLARED -&gt; L05-planner#1@1::commitment::UNDECLARED: 5</title></path>
+<path class="rib" d="M614.2,371.6 C641.8,371.6 641.8,371.6 669.4,371.6 L669.4,636.0 C641.8,636.0 641.8,636.0 614.2,636.0 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L05-planner#1@1::commitment::UNDECLARED -&gt; L06-navigator#1@1::commitment::UNDECLARED: 5</title></path>
+<path class="rib" d="M687.4,160.0 C715.0,160.0 715.0,153.0 742.6,153.0 L742.6,205.9 C715.0,205.9 715.0,212.9 687.4,212.9 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L06-navigator#1@1::commitment::UNDECLARED -&gt; L07-planner#1@1::commitment::PRESERVED: 1</title></path>
+<path class="rib" d="M760.6,153.0 C788.2,153.0 788.2,153.0 815.8,153.0 L815.8,205.9 C788.2,205.9 788.2,205.9 760.6,205.9 Z" fill="#c0392b" fill-opacity="0.55" stroke="none"><title>L07-planner#1@1::commitment::PRESERVED -&gt; L08-editor#1@1::commitment::WEAKENED, held: 1</title></path>
+<path class="rib" d="M833.8,153.0 C861.5,153.0 861.5,153.0 889.1,153.0 L889.1,205.9 C861.5,205.9 861.5,205.9 833.8,205.9 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L08-editor#1@1::commitment::WEAKENED, held -&gt; L09-planner#1@1::commitment::restored_equivalent: 1</title></path>
+<path class="rib" d="M907.1,153.0 C934.7,153.0 934.7,153.0 962.3,153.0 L962.3,205.9 C934.7,205.9 934.7,205.9 907.1,205.9 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L09-planner#1@1::commitment::restored_equivalent -&gt; L10-editor#1@1::commitment::PRESERVED: 1</title></path>
+<path class="rib" d="M980.3,153.0 C1007.9,153.0 1007.9,153.0 1035.5,153.0 L1035.5,205.9 C1007.9,205.9 1007.9,205.9 980.3,205.9 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L10-editor#1@1::commitment::PRESERVED -&gt; L11-planner#1@1::commitment::PRESERVED: 1</title></path>
+<path class="rib" d="M1053.5,153.0 C1081.2,153.0 1081.2,153.0 1108.8,153.0 L1108.8,205.9 C1081.2,205.9 1081.2,205.9 1053.5,205.9 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L11-planner#1@1::commitment::PRESERVED -&gt; L12-executor#1@1::commitment::PRESERVED: 1</title></path>
+<path class="rib" d="M1126.8,153.0 C1154.4,153.0 1154.4,153.0 1182.0,153.0 L1182.0,205.9 C1154.4,205.9 1154.4,205.9 1126.8,205.9 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L12-executor#1@1::commitment::PRESERVED -&gt; L13-planner#1@1::commitment::PRESERVED: 1</title></path>
+<path class="rib" d="M687.4,212.9 C715.0,212.9 715.0,219.9 742.6,219.9 L742.6,431.4 C715.0,431.4 715.0,424.4 687.4,424.4 Z" fill="#3b7a57" fill-opacity="0.55" stroke="none"><title>L06-navigator#1@1::commitment::UNDECLARED -&gt; L07-planner#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M687.4,424.4 C715.0,424.4 715.0,431.4 742.6,431.4 L742.6,643.0 C715.0,643.0 715.0,636.0 687.4,636.0 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L06-navigator#1@1::commitment::UNDECLARED -&gt; L07-planner#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M248.0,378.6 C275.6,378.6 275.6,371.6 303.2,371.6 L303.2,636.0 C275.6,636.0 275.6,643.0 248.0,643.0 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>o::commitment::SHOULD -&gt; L01-planner#1@1::commitment::UNDECLARED: 5</title></path>
+<path class="rib" d="M760.6,219.9 C788.2,219.9 788.2,219.9 815.8,219.9 L815.8,431.4 C788.2,431.4 788.2,431.4 760.6,431.4 Z" fill="#3b7a57" fill-opacity="0.55" stroke="none"><title>L07-planner#1@1::commitment::UNDECLARED -&gt; L08-editor#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M833.8,219.9 C861.5,219.9 861.5,219.9 889.1,219.9 L889.1,431.4 C861.5,431.4 861.5,431.4 833.8,431.4 Z" fill="#3b7a57" fill-opacity="0.55" stroke="none"><title>L08-editor#1@1::commitment::UNDECLARED -&gt; L09-planner#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M907.1,219.9 C934.7,219.9 934.7,219.9 962.3,219.9 L962.3,431.4 C934.7,431.4 934.7,431.4 907.1,431.4 Z" fill="#3b7a57" fill-opacity="0.55" stroke="none"><title>L09-planner#1@1::commitment::UNDECLARED -&gt; L10-editor#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M980.3,219.9 C1007.9,219.9 1007.9,219.9 1035.5,219.9 L1035.5,431.4 C1007.9,431.4 1007.9,431.4 980.3,431.4 Z" fill="#3b7a57" fill-opacity="0.55" stroke="none"><title>L10-editor#1@1::commitment::UNDECLARED -&gt; L11-planner#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M1053.5,219.9 C1081.2,219.9 1081.2,219.9 1108.8,219.9 L1108.8,431.4 C1081.2,431.4 1081.2,431.4 1053.5,431.4 Z" fill="#3b7a57" fill-opacity="0.55" stroke="none"><title>L11-planner#1@1::commitment::UNDECLARED -&gt; L12-executor#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M1126.8,219.9 C1154.4,219.9 1154.4,219.9 1182.0,219.9 L1182.0,431.4 C1154.4,431.4 1154.4,431.4 1126.8,431.4 Z" fill="#3b7a57" fill-opacity="0.55" stroke="none"><title>L12-executor#1@1::commitment::UNDECLARED -&gt; L13-planner#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M760.6,431.4 C788.2,431.4 788.2,431.4 815.8,431.4 L815.8,643.0 C788.2,643.0 788.2,643.0 760.6,643.0 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L07-planner#1@1::commitment::UNDECLARED -&gt; L08-editor#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M833.8,431.4 C861.5,431.4 861.5,431.4 889.1,431.4 L889.1,643.0 C861.5,643.0 861.5,643.0 833.8,643.0 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L08-editor#1@1::commitment::UNDECLARED -&gt; L09-planner#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M907.1,431.4 C934.7,431.4 934.7,431.4 962.3,431.4 L962.3,643.0 C934.7,643.0 934.7,643.0 907.1,643.0 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L09-planner#1@1::commitment::UNDECLARED -&gt; L10-editor#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M980.3,431.4 C1007.9,431.4 1007.9,431.4 1035.5,431.4 L1035.5,643.0 C1007.9,643.0 1007.9,643.0 980.3,643.0 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L10-editor#1@1::commitment::UNDECLARED -&gt; L11-planner#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M1053.5,431.4 C1081.2,431.4 1081.2,431.4 1108.8,431.4 L1108.8,643.0 C1081.2,643.0 1081.2,643.0 1053.5,643.0 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L11-planner#1@1::commitment::UNDECLARED -&gt; L12-executor#1@1::commitment::UNDECLARED: 4</title></path>
+<path class="rib" d="M1126.8,431.4 C1154.4,431.4 1154.4,431.4 1182.0,431.4 L1182.0,643.0 C1154.4,643.0 1154.4,643.0 1126.8,643.0 Z" fill="#c7a24a" fill-opacity="0.55" stroke="none"><title>L12-executor#1@1::commitment::UNDECLARED -&gt; L13-planner#1@1::commitment::UNDECLARED: 4</title></path>
+<rect x="230.0" y="153.0" width="18" height="211.6" fill="#3b7a57" stroke="#333" stroke-width="0.8"><title>commitment MUST: 4</title></rect>
+<rect x="230.0" y="378.6" width="18" height="264.4" fill="#c7a24a" stroke="#333" stroke-width="0.8"><title>commitment SHOULD: 5</title></rect>
+<text class="lbl" x="220.0" y="262.8" text-anchor="end">commitment MUST  <tspan font-weight="600">4</tspan></text>
+<text class="lbl" x="220.0" y="514.8" text-anchor="end">commitment SHOULD  <tspan font-weight="600">5</tspan></text>
+<rect x="303.2" y="160.0" width="18" height="476.0" fill="#dcdcdc" stroke="#333" stroke-width="0.8"><title>UNDECLARED: 9</title></rect>
+<text class="lbl" x="331.2" y="402.0" text-anchor="start"><tspan font-weight="600">9</tspan>  UNDECLARED</text>
+<rect x="376.5" y="160.0" width="18" height="476.0" fill="#dcdcdc" stroke="#333" stroke-width="0.8"><title>UNDECLARED: 9</title></rect>
+<text class="lbl" x="404.5" y="402.0" text-anchor="start"><tspan font-weight="600">9</tspan>  UNDECLARED</text>
+<rect x="449.7" y="160.0" width="18" height="476.0" fill="#dcdcdc" stroke="#333" stroke-width="0.8"><title>UNDECLARED: 9</title></rect>
+<text class="lbl" x="477.7" y="402.0" text-anchor="start"><tspan font-weight="600">9</tspan>  UNDECLARED</text>
+<rect x="522.9" y="160.0" width="18" height="476.0" fill="#dcdcdc" stroke="#333" stroke-width="0.8"><title>UNDECLARED: 9</title></rect>
+<text class="lbl" x="550.9" y="402.0" text-anchor="start"><tspan font-weight="600">9</tspan>  UNDECLARED</text>
+<rect x="596.2" y="160.0" width="18" height="476.0" fill="#dcdcdc" stroke="#333" stroke-width="0.8"><title>UNDECLARED: 9</title></rect>
+<text class="lbl" x="624.2" y="402.0" text-anchor="start"><tspan font-weight="600">9</tspan>  UNDECLARED</text>
+<rect x="669.4" y="160.0" width="18" height="476.0" fill="#dcdcdc" stroke="#333" stroke-width="0.8"><title>UNDECLARED: 9</title></rect>
+<text class="lbl" x="697.4" y="402.0" text-anchor="start"><tspan font-weight="600">9</tspan>  UNDECLARED</text>
+<rect x="742.6" y="153.0" width="18" height="52.9" fill="#5b8c5a" stroke="#333" stroke-width="0.8"><title>PRESERVED: 1</title></rect>
+<rect x="742.6" y="219.9" width="18" height="423.1" fill="#dcdcdc" stroke="#333" stroke-width="0.8"><title>UNDECLARED: 8</title></rect>
+<text class="lbl" x="770.6" y="183.4" text-anchor="start"><tspan font-weight="600">1</tspan>  PRESERVED</text>
+<text class="lbl" x="770.6" y="435.4" text-anchor="start"><tspan font-weight="600">8</tspan>  UNDECLARED</text>
+<rect x="815.8" y="153.0" width="18" height="52.9" fill="#c0392b" stroke="#c0392b" stroke-width="2.5"><title>WEAKENED, held: 1</title></rect>
+<rect x="815.8" y="219.9" width="18" height="423.1" fill="#dcdcdc" stroke="#333" stroke-width="0.8"><title>UNDECLARED: 8</title></rect>
+<text class="lbl" x="843.8" y="183.4" text-anchor="start" style="fill:#c0392b;font-weight:700"><tspan font-weight="600">1</tspan>  WEAKENED, held</text>
+<text class="lbl" x="843.8" y="435.4" text-anchor="start"><tspan font-weight="600">8</tspan>  UNDECLARED</text>
+<rect x="889.1" y="153.0" width="18" height="52.9" fill="#2e8b57" stroke="#333" stroke-width="0.8"><title>restored_equivalent: 1</title></rect>
+<rect x="889.1" y="219.9" width="18" height="423.1" fill="#dcdcdc" stroke="#333" stroke-width="0.8"><title>UNDECLARED: 8</title></rect>
+<text class="lbl" x="917.1" y="183.4" text-anchor="start"><tspan font-weight="600">1</tspan>  restored_equivalent</text>
+<text class="lbl" x="917.1" y="435.4" text-anchor="start"><tspan font-weight="600">8</tspan>  UNDECLARED</text>
+<rect x="962.3" y="153.0" width="18" height="52.9" fill="#5b8c5a" stroke="#333" stroke-width="0.8"><title>PRESERVED: 1</title></rect>
+<rect x="962.3" y="219.9" width="18" height="423.1" fill="#dcdcdc" stroke="#333" stroke-width="0.8"><title>UNDECLARED: 8</title></rect>
+<text class="lbl" x="990.3" y="183.4" text-anchor="start"><tspan font-weight="600">1</tspan>  PRESERVED</text>
+<text class="lbl" x="990.3" y="435.4" text-anchor="start"><tspan font-weight="600">8</tspan>  UNDECLARED</text>
+<rect x="1035.5" y="153.0" width="18" height="52.9" fill="#5b8c5a" stroke="#333" stroke-width="0.8"><title>PRESERVED: 1</title></rect>
+<rect x="1035.5" y="219.9" width="18" height="423.1" fill="#dcdcdc" stroke="#333" stroke-width="0.8"><title>UNDECLARED: 8</title></rect>
+<text class="lbl" x="1063.5" y="183.4" text-anchor="start"><tspan font-weight="600">1</tspan>  PRESERVED</text>
+<text class="lbl" x="1063.5" y="435.4" text-anchor="start"><tspan font-weight="600">8</tspan>  UNDECLARED</text>
+<rect x="1108.8" y="153.0" width="18" height="52.9" fill="#5b8c5a" stroke="#333" stroke-width="0.8"><title>PRESERVED: 1</title></rect>
+<rect x="1108.8" y="219.9" width="18" height="423.1" fill="#dcdcdc" stroke="#333" stroke-width="0.8"><title>UNDECLARED: 8</title></rect>
+<text class="lbl" x="1136.8" y="183.4" text-anchor="start"><tspan font-weight="600">1</tspan>  PRESERVED</text>
+<text class="lbl" x="1136.8" y="435.4" text-anchor="start"><tspan font-weight="600">8</tspan>  UNDECLARED</text>
+<rect x="1182.0" y="153.0" width="18" height="52.9" fill="#5b8c5a" stroke="#333" stroke-width="0.8"><title>PRESERVED: 1</title></rect>
+<rect x="1182.0" y="219.9" width="18" height="423.1" fill="#dcdcdc" stroke="#333" stroke-width="0.8"><title>UNDECLARED: 8</title></rect>
+<text class="lbl" x="1210.0" y="183.4" text-anchor="start"><tspan font-weight="600">1</tspan>  PRESERVED</text>
+<text class="lbl" x="1210.0" y="435.4" text-anchor="start"><tspan font-weight="600">8</tspan>  UNDECLARED</text>
+<path class="rib" d="M248.0,665.0 L303.2,665.0 L303.2,685.0 L248.0,685.0 Z" fill="#b8b8b8" fill-opacity="0.35" stroke="none"><title>claim sentences, word-matched: 186 to 15</title></path>
+<path class="rib" d="M321.2,665.0 L376.5,665.0 L376.5,685.0 L321.2,685.0 Z" fill="#b8b8b8" fill-opacity="0.35" stroke="none"><title>claim sentences, word-matched: 15 to 18</title></path>
+<path class="rib" d="M394.5,665.0 L449.7,665.0 L449.7,685.0 L394.5,685.0 Z" fill="#b8b8b8" fill-opacity="0.35" stroke="none"><title>claim sentences, word-matched: 18 to 39</title></path>
+<path class="rib" d="M467.7,665.0 L522.9,665.0 L522.9,685.0 L467.7,685.0 Z" fill="#b8b8b8" fill-opacity="0.35" stroke="none"><title>claim sentences, word-matched: 39 to 44</title></path>
+<path class="rib" d="M540.9,665.0 L596.2,665.0 L596.2,685.0 L540.9,685.0 Z" fill="#b8b8b8" fill-opacity="0.35" stroke="none"><title>claim sentences, word-matched: 44 to 62</title></path>
+<path class="rib" d="M614.2,665.0 L669.4,665.0 L669.4,685.0 L614.2,685.0 Z" fill="#b8b8b8" fill-opacity="0.35" stroke="none"><title>claim sentences, word-matched: 62 to 70</title></path>
+<path class="rib" d="M687.4,665.0 L742.6,665.0 L742.6,685.0 L687.4,685.0 Z" fill="#b8b8b8" fill-opacity="0.35" stroke="none"><title>claim sentences, word-matched: 70 to 88</title></path>
+<path class="rib" d="M760.6,665.0 L815.8,665.0 L815.8,685.0 L760.6,685.0 Z" fill="#b8b8b8" fill-opacity="0.35" stroke="none"><title>claim sentences, word-matched: 88 to 101</title></path>
+<path class="rib" d="M833.8,665.0 L889.1,665.0 L889.1,685.0 L833.8,685.0 Z" fill="#b8b8b8" fill-opacity="0.35" stroke="none"><title>claim sentences, word-matched: 101 to 110</title></path>
+<path class="rib" d="M907.1,665.0 L962.3,665.0 L962.3,685.0 L907.1,685.0 Z" fill="#b8b8b8" fill-opacity="0.35" stroke="none"><title>claim sentences, word-matched: 110 to 135</title></path>
+<path class="rib" d="M980.3,665.0 L1035.5,665.0 L1035.5,685.0 L980.3,685.0 Z" fill="#b8b8b8" fill-opacity="0.35" stroke="none"><title>claim sentences, word-matched: 135 to 153</title></path>
+<path class="rib" d="M1053.5,665.0 L1108.8,665.0 L1108.8,685.0 L1053.5,685.0 Z" fill="#b8b8b8" fill-opacity="0.35" stroke="none"><title>claim sentences, word-matched: 153 to 168</title></path>
+<path class="rib" d="M1126.8,665.0 L1182.0,665.0 L1182.0,685.0 L1126.8,685.0 Z" fill="#b8b8b8" fill-opacity="0.35" stroke="none"><title>claim sentences, word-matched: 168 to 170</title></path>
+<rect class="band" x="230.0" y="665.0" width="18" height="20" fill="#b8b8b8" stroke="#666" stroke-width="0.8"><title>claim sentences, word-matched: 186</title></rect>
+<text class="lbl" x="220.0" y="679.0" text-anchor="end"><tspan font-weight="600">186</tspan>  claim sentences, word-matched</text>
+<text class="sub" x="220.0" y="695.0" text-anchor="end">the claim ledger's rows, collapsed</text>
+<rect class="band" x="303.2" y="665.0" width="18" height="20" fill="#b8b8b8" stroke="#666" stroke-width="0.8"><title>claim sentences, word-matched: 15</title></rect>
+<text class="lbl" x="331.2" y="679.0" text-anchor="start"><tspan font-weight="600">15</tspan>  claim sentences, word-matched</text>
+<text class="sub" x="331.2" y="695.0" text-anchor="start">3 preserved, 12 dropped</text>
+<rect class="band" x="376.5" y="665.0" width="18" height="20" fill="#b8b8b8" stroke="#666" stroke-width="0.8"><title>claim sentences, word-matched: 18</title></rect>
+<text class="lbl" x="404.5" y="679.0" text-anchor="start"><tspan font-weight="600">18</tspan>  claim sentences, word-matched</text>
+<text class="sub" x="404.5" y="695.0" text-anchor="start">8 preserved, 10 dropped</text>
+<rect class="band" x="449.7" y="665.0" width="18" height="20" fill="#b8b8b8" stroke="#666" stroke-width="0.8"><title>claim sentences, word-matched: 39</title></rect>
+<text class="lbl" x="477.7" y="679.0" text-anchor="start"><tspan font-weight="600">39</tspan>  claim sentences, word-matched</text>
+<text class="sub" x="477.7" y="695.0" text-anchor="start">9 preserved, 1 changed, 29 dropped</text>
+<rect class="band" x="522.9" y="665.0" width="18" height="20" fill="#b8b8b8" stroke="#666" stroke-width="0.8"><title>claim sentences, word-matched: 44</title></rect>
+<text class="lbl" x="550.9" y="679.0" text-anchor="start"><tspan font-weight="600">44</tspan>  claim sentences, word-matched</text>
+<text class="sub" x="550.9" y="695.0" text-anchor="start">11 preserved, 33 dropped</text>
+<rect class="band" x="596.2" y="665.0" width="18" height="20" fill="#b8b8b8" stroke="#666" stroke-width="0.8"><title>claim sentences, word-matched: 62</title></rect>
+<text class="lbl" x="624.2" y="679.0" text-anchor="start"><tspan font-weight="600">62</tspan>  claim sentences, word-matched</text>
+<text class="sub" x="624.2" y="695.0" text-anchor="start">14 preserved, 2 changed, 46 dropped</text>
+<rect class="band" x="669.4" y="665.0" width="18" height="20" fill="#b8b8b8" stroke="#666" stroke-width="0.8"><title>claim sentences, word-matched: 70</title></rect>
+<text class="lbl" x="697.4" y="679.0" text-anchor="start"><tspan font-weight="600">70</tspan>  claim sentences, word-matched</text>
+<text class="sub" x="697.4" y="695.0" text-anchor="start">11 preserved, 2 changed, 57 dropped</text>
+<rect class="band" x="742.6" y="665.0" width="18" height="20" fill="#b8b8b8" stroke="#666" stroke-width="0.8"><title>claim sentences, word-matched: 88</title></rect>
+<text class="lbl" x="770.6" y="679.0" text-anchor="start"><tspan font-weight="600">88</tspan>  claim sentences, word-matched</text>
+<text class="sub" x="770.6" y="695.0" text-anchor="start">39 preserved, 4 changed, 44 dropped</text>
+<rect class="band" x="815.8" y="665.0" width="18" height="20" fill="#b8b8b8" stroke="#666" stroke-width="0.8"><title>claim sentences, word-matched: 101</title></rect>
+<text class="lbl" x="843.8" y="679.0" text-anchor="start"><tspan font-weight="600">101</tspan>  claim sentences, word-matched</text>
+<text class="sub" x="843.8" y="695.0" text-anchor="start">8 preserved, 5 changed, 88 dropped</text>
+<rect class="band" x="889.1" y="665.0" width="18" height="20" fill="#b8b8b8" stroke="#666" stroke-width="0.8"><title>claim sentences, word-matched: 110</title></rect>
+<text class="lbl" x="917.1" y="679.0" text-anchor="start"><tspan font-weight="600">110</tspan>  claim sentences, word-matched</text>
+<text class="sub" x="917.1" y="695.0" text-anchor="start">31 preserved, 5 changed, 71 dropped</text>
+<rect class="band" x="962.3" y="665.0" width="18" height="20" fill="#b8b8b8" stroke="#666" stroke-width="0.8"><title>claim sentences, word-matched: 135</title></rect>
+<text class="lbl" x="990.3" y="679.0" text-anchor="start"><tspan font-weight="600">135</tspan>  claim sentences, word-matched</text>
+<text class="sub" x="990.3" y="695.0" text-anchor="start">45 preserved, 5 changed, 84 dropped</text>
+<rect class="band" x="1035.5" y="665.0" width="18" height="20" fill="#b8b8b8" stroke="#666" stroke-width="0.8"><title>claim sentences, word-matched: 153</title></rect>
+<text class="lbl" x="1063.5" y="679.0" text-anchor="start"><tspan font-weight="600">153</tspan>  claim sentences, word-matched</text>
+<text class="sub" x="1063.5" y="695.0" text-anchor="start">43 preserved, 6 changed, 104 dropped</text>
+<rect class="band" x="1108.8" y="665.0" width="18" height="20" fill="#b8b8b8" stroke="#666" stroke-width="0.8"><title>claim sentences, word-matched: 168</title></rect>
+<text class="lbl" x="1136.8" y="679.0" text-anchor="start"><tspan font-weight="600">168</tspan>  claim sentences, word-matched</text>
+<text class="sub" x="1136.8" y="695.0" text-anchor="start">22 preserved, 3 changed, 143 dropped</text>
+<rect class="band" x="1182.0" y="665.0" width="18" height="20" fill="#b8b8b8" stroke="#666" stroke-width="0.8"><title>claim sentences, word-matched: 170</title></rect>
+<text class="lbl" x="1210.0" y="679.0" text-anchor="start"><tspan font-weight="600">170</tspan>  claim sentences, word-matched</text>
+<text class="sub" x="1210.0" y="695.0" text-anchor="start">41 preserved, 8 changed, 121 dropped</text>
+<text class="fn" x="230" y="749">9 commitment fields and 186 claims, 13 links. Tier 1 and the ledger; min_words 3. as-agreed: proxy (task as stated).</text>
+<text class="fn" x="230" y="767">No act, condition, value or claim text in this file.</text>
+</svg>

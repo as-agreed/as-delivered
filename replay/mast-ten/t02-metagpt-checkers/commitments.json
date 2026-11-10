@@ -1,0 +1,156 @@
+{
+ "kind": "as_agreed_proxy",
+ "proxy": true,
+ "tag": "[C]",
+ "drafted_by": {
+  "mode": "exchange",
+  "model": "claude-opus-5-5",
+  "version": "claude-opus-5-5",
+  "date": "2026-11-04T15:09:09Z",
+  "prompt": "drafter-v1 (2026-11-04)"
+ },
+ "task_statement_sha256": "b93f458ce431f11621809a7fc6f1c6d2805344fd4cd2e2e5f42581bb3c48793c",
+ "obligor_obligee": "set by the harness, not drafted",
+ "commitments": [
+  {
+   "commitment_id": "task",
+   "act": "[cut 34 chars, sha256 4ac1097c5c53]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST"
+  },
+  {
+   "commitment_id": "board_size",
+   "act": "[cut 16 chars, sha256 a56a728a3b38]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "limit": {
+    "board_rows": {
+     "in": [
+      8
+     ]
+    },
+    "board_cols": {
+     "in": [
+      8
+     ]
+    }
+   },
+   "carried_by": {
+    "limit.board_rows": "board_rows",
+    "limit.board_cols": "board_cols"
+   }
+  },
+  {
+   "commitment_id": "player_count",
+   "act": "[cut 35 chars, sha256 7ac118501c37]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "limit": {
+    "players": {
+     "in": [
+      2
+     ]
+    }
+   },
+   "carried_by": {
+    "limit.players": "players"
+   }
+  },
+  {
+   "commitment_id": "alternate_turns",
+   "act": "[cut 35 chars, sha256 7ac118501c37]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "alternate_turns",
+     "text": "Turns alternate between the two players.",
+     "verification": "machine_checkable",
+     "field": "alternate_turns"
+    }
+   ]
+  },
+  {
+   "commitment_id": "capture_rules",
+   "act": "[cut 40 chars, sha256 e09da79c43a7]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "standard_capture_rules",
+     "text": "Standard checkers capture rules are applied.",
+     "verification": "machine_checkable",
+     "field": "standard_capture_rules"
+    }
+   ]
+  },
+  {
+   "commitment_id": "kinging_rules",
+   "act": "[cut 40 chars, sha256 e09da79c43a7]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "standard_kinging_rules",
+     "text": "Standard checkers kinging rules are applied.",
+     "verification": "machine_checkable",
+     "field": "standard_kinging_rules"
+    }
+   ]
+  },
+  {
+   "commitment_id": "prompt_moves",
+   "act": "[cut 28 chars, sha256 f9dd91d3f1a5]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "prompt_moves_in_notation",
+     "text": "The program prompts the player for moves written in a notation.",
+     "verification": "machine_checkable",
+     "field": "prompt_moves_in_notation"
+    }
+   ]
+  },
+  {
+   "commitment_id": "update_board",
+   "act": "[cut 34 chars, sha256 d68a2a93aa3a]",
+   "obligor": "the-system",
+   "obligee": "the-requester",
+   "modality": "MUST",
+   "acceptance_criteria": [
+    {
+     "criterion_id": "update_board_state",
+     "text": "After each move [cut 18 chars, sha256 372148f28a57] updated to reflect it.",
+     "verification": "machine_checkable",
+     "field": "update_board_state"
+    }
+   ]
+  }
+ ],
+ "quotes": {
+  "task": "[cut 34 chars, sha256 4ac1097c5c53]",
+  "board_size": "[cut 16 chars, sha256 a56a728a3b38]",
+  "player_count": "[cut 19 chars, sha256 0b717be9b56b]",
+  "alternate_turns": "[cut 35 chars, sha256 7ac118501c37]",
+  "capture_rules": "[cut 40 chars, sha256 e09da79c43a7]",
+  "kinging_rules": "[cut 40 chars, sha256 e09da79c43a7]",
+  "prompt_moves": "[cut 28 chars, sha256 f9dd91d3f1a5]",
+  "update_board": "[cut 34 chars, sha256 d68a2a93aa3a]"
+ },
+ "untyped": [
+  {
+   "quote": "[cut 25 chars, sha256 318a721eb274]",
+   "why": "example of a notation, open choice"
+  }
+ ],
+ "dropped_by_check": [],
+ "reused_from": "results/2026-11-04-mast-ten-v2/t02-metagpt-checkers/commitments.json"
+}
